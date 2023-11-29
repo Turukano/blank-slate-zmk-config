@@ -6,6 +6,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define QWERTY_BASE 1
+#define ___ &trans
 
 #define TBLE_ORTHO   1
 // #define TBLE_MIT     1
