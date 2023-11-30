@@ -1,4 +1,4 @@
-#include "../zmk-nodefree-config/helper.h"
+#include "helper.h"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
