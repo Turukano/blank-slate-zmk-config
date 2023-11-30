@@ -1,0 +1,171 @@
+ZMK_BEHAVIOR(d_w, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp D>, <&kp W>;
+)
+
+ZMK_BEHAVIOR(u_accent, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp U>, <&kp DE_SQT &kp U>;
+)
+
+ZMK_BEHAVIOR(a_accent, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp A>, <&kp DE_SQT &kp A>;
+)
+
+ZMK_BEHAVIOR(x_accenti, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp X>, <&kp DE_SQT &kp I>;
+)
+
+ZMK_BEHAVIOR(p_sqbr, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp P>, <&kp DE_LBKT>;
+)
+
+ZMK_BEHAVIOR(h_brac, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp H>, <&kp DE_LPAR>;
+)
+
+ZMK_BEHAVIOR(l_slash, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp L>, <&kp DE_FSLH>;
+)
+
+ZMK_BEHAVIOR(m_cbrac, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp M>, <&kp DE_RPAR>;
+)
+
+ZMK_BEHAVIOR(g_csqbrac, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp G>, <&kp DE_RBKT>;
+)
+
+ZMK_BEHAVIOR(c_strg, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp C>, <&mo STRG>;
+)
+
+ZMK_BEHAVIOR(t_nav, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp T>, <&mo NAV>;
+)
+
+ZMK_BEHAVIOR(i_num, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp I>, <&mo NUM>;
+)
+
+ZMK_BEHAVIOR(e_accent, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp E>, <&kp DE_SQT &kp E>;
+)
+
+ZMK_BEHAVIOR(o_accent, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp O>, <&kp DE_SQT &kp O>;
+)
+
+ZMK_BEHAVIOR(r_apos, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp R>, <&kp DE_ACUT>;
+)
+
+ZMK_BEHAVIOR(s_ss, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp R>, <&kp DE_SS>;
+)
+
+ZMK_BEHAVIOR(enter_strg, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp ENTER>, <&sl STRG>;
+)
+
+ZMK_BEHAVIOR(udia_accent, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp DE_UDIA>, <&udiaaccent>;
+)
+
+ZMK_BEHAVIOR(udiaaccent, macro,
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N6 &kp KP_N9>, <&macro_release &kp LALT>;
+)
+
+ZMK_BEHAVIOR(odia_accent, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp DE_ODIA>, <&odiaaccent>;
+)
+
+ZMK_BEHAVIOR(odiaaccent, macro,
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N3 &kp KP_N7>, <&macro_release &kp LALT>;
+)
+
+ZMK_BEHAVIOR(td_z_at, tap_dance,
+    tapping-term-ms = <250>;
+    bindings = <&kp DE_Z>, <&kp DE_AT>;
+)
+
+ZMK_BEHAVIOR(td_comm_quest, tap_dance,
+    tapping-term-ms = <250>;
+    bindings = <&kp DE_COMM>, <&kp DE_QUES>;
+)
+
+ZMK_BEHAVIOR(k_q, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp K>, <&kp Q>;
+)
+
+ZMK_BEHAVIOR(dot_excl, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp DE_DOT>, <&kp DE_EXCL>;
+)
+
+ZMK_BEHAVIOR(space_nav, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp SPACE>, <&mo NAV>;
+)

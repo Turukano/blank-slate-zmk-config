@@ -14,6 +14,12 @@
 #define NUM         3
 #define STRG        4
 
+#include "german.dtsi"
+#include "functions.dtsi"
+#include "combos.dtsi" //muss nach den layerdefs sein
+#include "layer_one.dtsi"
+#include "layer_two.dtsi"
+
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
@@ -48,10 +54,10 @@
         def_layer {
             label = "DEF";
             bindings = <
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+&kp J	&d_w	&u_accent	&a_accent	&x_accenti	___ ___	&p_sqbr	&h_brac	&l_slash	&m_cbrac	&g_csqbrac
+&c_strg	&t_nav	&i_num	&e_accent	&o_accent	___ ___	&kp B	&kp N	&r_apos	&s_ss	&enter_strg
+&kp F	&kp V	&udia_accent	&kp DE_ADIA	&odia_accent	___ ___	&kp DE_Y	&td_z_at	&sl 1	&td_comm_quest	&k_q
+___	___  ___	___	&sl 1	&dot_excl		&kp BSPC	&space_nav		___	___  ___ ___
             >;
         };
 

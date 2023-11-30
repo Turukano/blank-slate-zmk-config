@@ -1,0 +1,119 @@
+ZMK_BEHAVIOR(D_W, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(D)>, <&kp S(W)>;
+)
+
+ZMK_BEHAVIOR(U_ACCENT, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(U)>, <&kp DE_SQT &kp S(U)>;
+)
+
+ZMK_BEHAVIOR(A_ACCENT, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(A)>, <&kp DE_SQT &kp S(A)>;
+)
+
+ZMK_BEHAVIOR(X_ACCENTI, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(X)>, <&kp DE_SQT &kp S(I)>;
+)
+
+ZMK_BEHAVIOR(P_larrow, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(P)>, <&kp DE_LABK>;
+)
+
+ZMK_BEHAVIOR(H_lcurl, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(H)>, <&kp DE_LBRC>;
+)
+
+ZMK_BEHAVIOR(L_bslsh, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(L)>, <&kp DE_BSLH>;
+)
+
+ZMK_BEHAVIOR(M_rcurl, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(M)>, <&kp DE_RBRC>;
+)
+
+ZMK_BEHAVIOR(G_rarrow, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(G)>, <&kp DE_RABK>;
+)
+
+ZMK_BEHAVIOR(E_ACCENT, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(E)>, <&kp DE_SQT &kp S(E)>;
+)
+
+ZMK_BEHAVIOR(O_ACCENT, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(O)>, <&kp DE_SQT &kp S(O)>;
+)
+
+ZMK_BEHAVIOR(senter_center, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(ENTER)>, <&kp C(ENTER)>;
+)
+
+ZMK_BEHAVIOR(UDIA_ACCENT, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(DE_UDIA)>, <&UDIAACCENT>;
+)
+
+ZMK_BEHAVIOR(UDIAACCENT, macro,
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N6 &kp KP_N8>, <&macro_release &kp LALT>;
+)
+
+ZMK_BEHAVIOR(ODIA_ACCENT, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(DE_ODIA)>, <&ODIAACCENT>;
+)
+
+ZMK_BEHAVIOR(ODIAACCENT, macro,
+    bindings = <&macro_press &kp LALT>, <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N3 &kp KP_N6>, <&macro_release &kp LALT>;
+)
+
+ZMK_BEHAVIOR(minus_unds, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp DE_MINS>, <&kp DE_UNDS>;
+)
+
+ZMK_BEHAVIOR(K_Q, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(K)>, <&kp S(Q)>;
+)
