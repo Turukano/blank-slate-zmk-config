@@ -16,6 +16,12 @@
 #define NUM_L 2
 #define SYM_L 3
 
+#define DEF         0
+#define SHIF        1
+#define NAV         2 
+#define NUM         3
+#define STRG        4
+
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
@@ -65,8 +71,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
-            label = "Nav";
+        def_layer {
+            label = "DEF";
+            bindings = <
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+            >;
+        };
+
+        shif_layer {
+            label = "SHIF";
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
@@ -76,50 +92,32 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
         };
 
         nav_layer {
-            label = "Nav";
+            label = "NAV";
             bindings = <
-&bt BT_CLR &trans     &trans     &trans      &trans          &trans       &trans     &trans         &trans      &trans     &trans     &kp DEL
-&trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp LEFT       &kp DOWN    &kp UP     &kp RIGHT  &trans
-&trans     &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)       &bt BT(4)    &trans     &kp HOME       &kp PG_DN   &kp PG_UP  &kp END    &trans
-#ifdef TBLE_DUAL_2U
-&trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
-#elif defined(TBLE_MIT)
-&trans  &trans        &trans     &trans      &trans                &trans             &trans      &trans   &trans &trans &trans
-#else
-&trans  &trans        &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans &trans &trans
-#endif
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
         num_layer {
-            label = "Num";
+            label = "NUM";
             bindings = <
-&trans     &kp LBKT   &trans &trans &trans    &kp RBKT    &kp C_PREV    &kp N7     &kp N8      &kp N9       &trans     &trans
-&trans     &kp MINUS  &trans &trans &trans    &kp EQUAL   &kp C_NEXT    &kp N4     &kp N5      &kp N6       &trans     &trans
-&trans     &kp GRAVE  &trans &trans &trans    &kp BSLH    &trans        &kp N1     &kp N2      &kp N3       &trans     &trans
-#ifdef TBLE_DUAL_2U
-&trans  &trans       &trans     &kp N0              &trans                 &trans            &trans         &trans &trans &trans
-#elif defined(TBLE_MIT)
-&trans  &trans       &trans     &kp N0      &trans           &none            &trans        &kp DEL      &trans &trans &trans
-#else
-&trans  &trans       &trans     &kp N0      &trans    &none         &none     &kp ESC        &kp DEL      &trans &trans &trans
-#endif
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
-        sym_layer {
-            label = "Sym";
+        strg_layer {
+            label = "STRG";
             bindings = <
-&trans     &kp LBRC   &kp AMPS   &kp STAR    &kp LPAR     &kp RBRC     &trans     &trans    &trans       &trans       &trans     &bootloader
-&trans     &kp COLON  &kp DLLR   &kp PRCNT   &kp CARET    &kp PLUS     &trans     &trans    &trans       &trans       &trans     &trans
-&trans     &kp TILDE  &kp EXCL   &kp AT      &kp HASH     &kp PIPE     &trans     &trans    &trans       &trans       &trans     &trans
-#ifdef TBLE_DUAL_2U
-&trans &trans        &trans     &kp RPAR                &trans                    &trans       &trans         &trans &trans &trans
-#elif defined(TBLE_MIT)
-&trans &trans        &trans     &kp RPAR        &trans                &trans             &trans      &trans   &trans &trans &trans
-#else
-&trans &trans        &trans     &kp RPAR        &trans          &trans       &trans    &trans  &trans         &trans &trans &trans
-#endif
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
