@@ -8,14 +8,6 @@
 #define QWERTY_BASE 1
 #define ___ &trans
 
-#define TBLE_ORTHO   1
-// #define TBLE_MIT     1
-// #define TBLE_DUAL_2U 1
-
-#define NAV_L 1
-#define NUM_L 2
-#define SYM_L 3
-
 #define DEF         0
 #define SHIF        1
 #define NAV         2 
@@ -29,14 +21,7 @@
 
 / {
     chosen {
-       zmk,matrix_transform =
-#ifdef TBLE_DUAL_2U
-                       &dual_2u_transform;
-#elif defined(TBLE_MIT)
-                       &mit_transform;
-#else
-                       &ortho_transform;
-#endif
+       zmk,matrix_transform = &ortho_transform;
     };
 
     macros {
@@ -56,25 +41,6 @@
 		bindings = <&kp LSHFT>, <&caps_word>;
 	};
     };
-
-// Conditional layer only when we have less thumb keys
-#ifdef TBLE_DUAL_2U
-    cond_layers {
-        compatible = "zmk,conditional-layers";
-	tri {
-	    if-layers = <NUM_L NAV_L>;
-	    then-layer = <SYM_L>;
-        };
-    };
-#endif
-
-
-ZMK_LAYER(deft_layer,
- ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-    )
 
     keymap {
         compatible = "zmk,keymap";
