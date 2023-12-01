@@ -1,123 +1,172 @@
-ZMK_BEHAVIOR(d_w, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp D>, <&kp W>;
-)
+/ {
+    behaviors {
+        pht: positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <1>;    // <---[[the W key]]
+        };
 
-ZMK_BEHAVIOR(u_accent, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp U>, <&kp DE_SQT &kp U>;
-)
+        d_w: d_w {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp D>, <&kp W>;
+        };
 
-ZMK_BEHAVIOR(a_accent, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp A>, <&kp DE_SQT &kp A>;
-)
+        u_accent: u_accent {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp U>, <&kp DE_SQT &kp U>;
+        };
 
-ZMK_BEHAVIOR(x_accenti, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp X>, <&kp DE_SQT &kp I>;
-)
+        a_accent: a_accent {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp A>, <&kp DE_SQT &kp A>;
+        };
 
-ZMK_BEHAVIOR(p_sqbr, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp P>, <&kp DE_LBKT>;
-)
+        x_accenti: x_accenti {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp X>, <&kp DE_SQT &kp I>;
+        };
 
-ZMK_BEHAVIOR(h_brac, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp H>, <&kp DE_LPAR>;
-)
+        p_sqbr: p_sqbr {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp P>, <&kp DE_LBKT>;
+        };
 
-ZMK_BEHAVIOR(l_slash, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp L>, <&kp DE_FSLH>;
-)
+        h_brac: h_brac {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp H>, <&kp DE_LPAR>;
+        };
 
-ZMK_BEHAVIOR(m_cbrac, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp M>, <&kp DE_RPAR>;
-)
+        l_slash: l_slash {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp L>, <&kp DE_FSLH>;
+        };
 
-ZMK_BEHAVIOR(g_csqbrac, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp G>, <&kp DE_RBKT>;
-)
+        m_cbrac: m_cbrac {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp M>, <&kp DE_RPAR>;
+        };
 
-ZMK_BEHAVIOR(c_strg, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp C>, <&mo STRG>;
-)
+        g_csqbrac: g_csqbrac {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp G>, <&kp DE_RBKT>;
+        };
 
-ZMK_BEHAVIOR(t_nav, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp T>, <&mo NAV>;
-)
+        c_strg: c_strg {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+         bindings = <&kp C>, <&mo STRG>;
+        };
 
-ZMK_BEHAVIOR(i_num, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp I>, <&mo NUM>;
-)
+        t_nav: t_nav {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp T>, <&mo NAV>;
+        };
 
-ZMK_BEHAVIOR(e_accent, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp E>, <&kp DE_SQT &kp E>;
-)
+        i_num: i_num {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp I>, <&mo NUM>;
+        };
 
-ZMK_BEHAVIOR(o_accent, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp O>, <&kp DE_SQT &kp O>;
-)
+        e_accent: e_accent {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp E>, <&kp DE_SQT &kp E>;
+        };
 
-ZMK_BEHAVIOR(r_apos, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp R>, <&kp DE_ACUT>;
-)
+        o_accent: o_accent {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp O>, <&kp DE_SQT &kp O>;
+        };
 
-ZMK_BEHAVIOR(s_ss, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp R>, <&kp DE_SS>;
-)
+        r_apos: r_apos {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp R>, <&kp DE_ACUT>;
+        };
 
-ZMK_BEHAVIOR(enter_strg, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <125>;
-    bindings = <&kp ENTER>, <&sl STRG>;
-)
+        s_ss: s_ss {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp R>, <&kp DE_SS>;
+        };
 
-ZMK_BEHAVIOR(udia_accent, hold_tap,
+        enter_strg: enter_strg {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp ENTER>, <&sl STRG>;
+        };
+    };
+};
+
+
+/*ZMK_BEHAVIOR(udia_accent, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
@@ -168,4 +217,4 @@ ZMK_BEHAVIOR(space_nav, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
     bindings = <&kp SPACE>, <&mo NAV>;
-)
+)*/
