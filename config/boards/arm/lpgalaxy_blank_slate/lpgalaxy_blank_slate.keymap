@@ -30,7 +30,6 @@
     };
 
     behaviors {
-
         key: name {
             compatible = "zmk,behavior-hold-tap";
             label = "LABEL";
@@ -38,7 +37,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp A>, <&kp B>;
+            bindings = <&kp>, <&kp>;
         };
     
         /*d-w: d_w {
