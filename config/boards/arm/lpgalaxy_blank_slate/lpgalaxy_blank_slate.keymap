@@ -37,7 +37,7 @@
 		)
     };
 
-    behaviors {
+    /*behaviors {
         dwtie: dtietie_w {
             compatible = "zmk,behavior-hold-tap";
             label = "dwtie";
@@ -48,7 +48,7 @@
             bindings = <&kp D>, <&kp W>;
         };
 
-        /*u_accent: u_accent {
+        u_accent: u_accent {
             compatible = "zmk,behavior-hold-tap";
             label = "u_accent";
             #binding-cells = <2>;
@@ -206,7 +206,20 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <125>;
             bindings = <&kp ENTER>, <&sl STRG>;
-        };*/
+        };
+    };*/
+
+    macros {
+        udiaaccent: udiaaccent {
+            label = "udiaaccent";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N6 &kp KP_N9>
+                , <&macro_release &kp LALT>
+                ;
+        };
     };
     
     tap_dances {
@@ -225,7 +238,7 @@
         def_layer {
             label = "DEF";
             bindings = <
-&dwtie ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
