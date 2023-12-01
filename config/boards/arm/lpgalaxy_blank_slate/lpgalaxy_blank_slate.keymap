@@ -29,8 +29,19 @@
        zmk,matrix_transform = &ortho_transform;
     };
 
-    /*behaviors {
-        dwtie: dtietie_w {
+    behaviors {
+
+        key: name {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LABEL";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp A>, <&kp B>;
+        };
+    
+        /*d-w: d_w {
             compatible = "zmk,behavior-hold-tap";
             label = "dwtie";
             #binding-cells = <2>;
@@ -198,8 +209,8 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <125>;
             bindings = <&kp ENTER>, <&sl STRG>;
-        };
-    };*/
+        };*/
+    };
 
     macros {
         udiaaccent: udiaaccent {
