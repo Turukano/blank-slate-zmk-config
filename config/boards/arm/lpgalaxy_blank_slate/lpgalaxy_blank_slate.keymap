@@ -29,14 +29,6 @@
        zmk,matrix_transform = &ortho_transform;
     };
 
-    macros {
-      ZMK_MACRO(thumbs_up,
-		wait-ms = <1>;
-		tap-ms = <5>;
-                bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
-		)
-    };
-
     /*behaviors {
         dwtie: dtietie_w {
             compatible = "zmk,behavior-hold-tap";
@@ -220,6 +212,14 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+
+        ZMK_MACRO(thumbs_up,
+		    wait-ms = <1>;
+		    tap-ms = <5>;
+            bindings 
+                = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>
+                ;
+		)
     };
     
     tap_dances {
