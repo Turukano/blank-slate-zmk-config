@@ -1,17 +1,8 @@
 / {
     behaviors {
-        pht: positional_hold_tap {
+            d_w: d_w {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <1>;    // <---[[the W key]]
-        };
-
-        d_w: d_w {
-            compatible = "zmk,behavior-hold-tap";
+            label = "d_w";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -21,6 +12,7 @@
 
         u_accent: u_accent {
             compatible = "zmk,behavior-hold-tap";
+            label = "u_accent";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -30,6 +22,7 @@
 
         a_accent: a_accent {
             compatible = "zmk,behavior-hold-tap";
+            label = "a_accent";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -39,6 +32,7 @@
 
         x_accenti: x_accenti {
             compatible = "zmk,behavior-hold-tap";
+            label = "x_accenti";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -48,6 +42,7 @@
 
         p_sqbr: p_sqbr {
             compatible = "zmk,behavior-hold-tap";
+            label = "p_sqbr";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -57,6 +52,7 @@
 
         h_brac: h_brac {
             compatible = "zmk,behavior-hold-tap";
+            label = "h_brac";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -66,6 +62,7 @@
 
         l_slash: l_slash {
             compatible = "zmk,behavior-hold-tap";
+            label = "l_slash";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -75,6 +72,7 @@
 
         m_cbrac: m_cbrac {
             compatible = "zmk,behavior-hold-tap";
+            label = "m_cbrac";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -84,6 +82,7 @@
 
         g_csqbrac: g_csqbrac {
             compatible = "zmk,behavior-hold-tap";
+            label = "g_csqbrac";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -93,6 +92,7 @@
 
         c_strg: c_strg {
             compatible = "zmk,behavior-hold-tap";
+            label = "c_strg";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -102,6 +102,7 @@
 
         t_nav: t_nav {
             compatible = "zmk,behavior-hold-tap";
+            label = "t_nav";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -111,6 +112,7 @@
 
         i_num: i_num {
             compatible = "zmk,behavior-hold-tap";
+            label = "i_num";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -120,6 +122,7 @@
 
         e_accent: e_accent {
             compatible = "zmk,behavior-hold-tap";
+            label = "e_accent";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -129,6 +132,7 @@
 
         o_accent: o_accent {
             compatible = "zmk,behavior-hold-tap";
+            label = "o_accent";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -138,6 +142,7 @@
 
         r_apos: r_apos {
             compatible = "zmk,behavior-hold-tap";
+            label = "r_apos";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -147,6 +152,7 @@
 
         s_ss: s_ss {
             compatible = "zmk,behavior-hold-tap";
+            label = "s_ss";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -156,6 +162,7 @@
 
         enter_strg: enter_strg {
             compatible = "zmk,behavior-hold-tap";
+            label = "enter_strg";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
