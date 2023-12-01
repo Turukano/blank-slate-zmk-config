@@ -14,9 +14,9 @@
 #define NUM         3
 #define STRG        4
 
-#include "german.dtsi"
-#include "functions.dtsi"
-#include "combos.dtsi" //muss nach den layerdefs sein
+//#include "german.dtsi"
+//#include "functions.dtsi"
+//#include "combos.dtsi" //muss nach den layerdefs sein
 //#include "layer_one.dtsi"
 //#include "layer_two.dtsi"
 
