@@ -54,10 +54,10 @@
         def_layer {
             label = "DEF";
             bindings = <
-&kp J	&d_w	&u_accent	&a_accent	&x_accenti	___ ___	&p_sqbr	&h_brac	&l_slash	&m_cbrac	&g_csqbrac
-&c_strg	&t_nav	&i_num	&e_accent	&o_accent	___ ___	&kp B	&kp N	&r_apos	&s_ss	&enter_strg
-&kp F	&kp V	&udia_accent	&kp DE_ADIA	&odia_accent	___ ___	&kp DE_Y	&td_z_at	&sl 1	&td_comm_quest	&k_q
-___	___  ___	___	&sl 1	&dot_excl		&kp BSPC	&space_nav		___	___  ___ ___
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
