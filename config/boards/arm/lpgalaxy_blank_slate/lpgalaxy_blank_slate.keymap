@@ -38,8 +38,9 @@
     };
 
     behaviors {
-        /*dw: d_w {
+        dwtie: dtietie_w {
             compatible = "zmk,behavior-hold-tap";
+            label = "dwtie";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -47,7 +48,7 @@
             bindings = <&kp D>, <&kp W>;
         };
 
-        u_accent: u_accent {
+        /*u_accent: u_accent {
             compatible = "zmk,behavior-hold-tap";
             label = "u_accent";
             #binding-cells = <2>;
