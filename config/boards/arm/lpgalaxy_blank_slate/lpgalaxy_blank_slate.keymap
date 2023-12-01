@@ -38,7 +38,7 @@
     };
 
     behaviors {
-        dw: d_w {
+        /*dw: d_w {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -47,7 +47,7 @@
             bindings = <&kp D>, <&kp W>;
         };
 
-        /*u_accent: u_accent {
+        u_accent: u_accent {
             compatible = "zmk,behavior-hold-tap";
             label = "u_accent";
             #binding-cells = <2>;
