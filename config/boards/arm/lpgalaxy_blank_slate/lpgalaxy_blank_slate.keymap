@@ -38,7 +38,177 @@
 		)
     };
 
-    #include "layer_one.dtsi"
+    behaviors {
+        d_w: d_w {
+            compatible = "zmk,behavior-hold-tap";
+            label = "d_w";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp D>, <&kp W>;
+        };
+
+        u_accent: u_accent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "u_accent";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp U>, <&kp DE_SQT &kp U>;
+        };
+
+        a_accent: a_accent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "a_accent";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp A>, <&kp DE_SQT &kp A>;
+        };
+
+        x_accenti: x_accenti {
+            compatible = "zmk,behavior-hold-tap";
+            label = "x_accenti";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp X>, <&kp DE_SQT &kp I>;
+        };
+
+        p_sqbr: p_sqbr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "p_sqbr";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp P>, <&kp DE_LBKT>;
+        };
+
+        h_brac: h_brac {
+            compatible = "zmk,behavior-hold-tap";
+            label = "h_brac";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp H>, <&kp DE_LPAR>;
+        };
+
+        l_slash: l_slash {
+            compatible = "zmk,behavior-hold-tap";
+            label = "l_slash";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp L>, <&kp DE_FSLH>;
+        };
+
+        m_cbrac: m_cbrac {
+            compatible = "zmk,behavior-hold-tap";
+            label = "m_cbrac";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp M>, <&kp DE_RPAR>;
+        };
+
+        g_csqbrac: g_csqbrac {
+            compatible = "zmk,behavior-hold-tap";
+            label = "g_csqbrac";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp G>, <&kp DE_RBKT>;
+        };
+
+        c_strg: c_strg {
+            compatible = "zmk,behavior-hold-tap";
+            label = "c_strg";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+         bindings = <&kp C>, <&mo STRG>;
+        };
+
+        t_nav: t_nav {
+            compatible = "zmk,behavior-hold-tap";
+            label = "t_nav";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp T>, <&mo NAV>;
+        };
+
+        i_num: i_num {
+            compatible = "zmk,behavior-hold-tap";
+            label = "i_num";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp I>, <&mo NUM>;
+        };
+
+        e_accent: e_accent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "e_accent";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp E>, <&kp DE_SQT &kp E>;
+        };
+
+        o_accent: o_accent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "o_accent";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp O>, <&kp DE_SQT &kp O>;
+        };
+
+        r_apos: r_apos {
+            compatible = "zmk,behavior-hold-tap";
+            label = "r_apos";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp R>, <&kp DE_ACUT>;
+        };
+
+        s_ss: s_ss {
+            compatible = "zmk,behavior-hold-tap";
+            label = "s_ss";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp R>, <&kp DE_SS>;
+        };
+
+        enter_strg: enter_strg {
+            compatible = "zmk,behavior-hold-tap";
+            label = "enter_strg";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <125>;
+            bindings = <&kp ENTER>, <&sl STRG>;
+        };
+    };
     
     tap_dances {
     	shifty: shift_caps_word {
