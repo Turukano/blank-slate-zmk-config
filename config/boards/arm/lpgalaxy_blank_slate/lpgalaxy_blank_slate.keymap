@@ -38,7 +38,7 @@
     };
 
     behaviors {
-        d_w: dctigsern_w {
+        dw: dctigsern_w {
             compatible = "zmk,behavior-hold-tap";
             label = "D_W";
             #binding-cells = <2>;
