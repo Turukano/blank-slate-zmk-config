@@ -17,7 +17,7 @@
 #include "german.dtsi"
 #include "functions.dtsi"
 #include "combos.dtsi" //muss nach den layerdefs sein
-#include "layer_one.dtsi"
+
 //#include "layer_two.dtsi"
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
@@ -37,6 +37,8 @@
                 bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
 		)
     };
+
+    #include "layer_one.dtsi"
     
     tap_dances {
     	shifty: shift_caps_word {
