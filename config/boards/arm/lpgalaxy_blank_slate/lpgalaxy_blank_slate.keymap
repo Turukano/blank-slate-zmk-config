@@ -17,7 +17,7 @@
 #include "german.dtsi"
 #include "functions.dtsi"
 #include "combos.dtsi" //muss nach den layerdefs sein
-//#include "layer_one.dtsi"
+#include "layer_one.dtsi"
 //#include "layer_two.dtsi"
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace

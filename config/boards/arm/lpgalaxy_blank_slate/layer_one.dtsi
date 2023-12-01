@@ -1,4 +1,3 @@
-/ {
     behaviors {
             d_w: d_w {
             compatible = "zmk,behavior-hold-tap";
@@ -170,7 +169,6 @@
             bindings = <&kp ENTER>, <&sl STRG>;
         };
     };
-};
 
 
 /*ZMK_BEHAVIOR(udia_accent, hold_tap,
