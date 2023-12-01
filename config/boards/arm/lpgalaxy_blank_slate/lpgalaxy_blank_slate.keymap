@@ -37,8 +37,8 @@
 		)
     };
 
-    /*behaviors {
-        d_w: d_w {
+    behaviors {
+        d_w: dctigsern_w {
             compatible = "zmk,behavior-hold-tap";
             label = "D_W";
             #binding-cells = <2>;
@@ -48,7 +48,7 @@
             bindings = <&kp D>, <&kp W>;
         };
 
-        u_accent: u_accent {
+        /*u_accent: u_accent {
             compatible = "zmk,behavior-hold-tap";
             label = "u_accent";
             #binding-cells = <2>;
@@ -206,8 +206,8 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <125>;
             bindings = <&kp ENTER>, <&sl STRG>;
-        };
-    };*/
+        };*/
+    };
     
     tap_dances {
     	shifty: shift_caps_word {
