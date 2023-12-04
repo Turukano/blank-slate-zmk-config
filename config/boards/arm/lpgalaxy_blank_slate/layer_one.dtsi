@@ -242,6 +242,7 @@ ZMK_BEHAVIOR(space_nav, hold_tap,
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp DE_SQT>
+                , <&macro_tap &kp>
                 ;
         };
 
