@@ -1,25 +1,25 @@
     behaviors {
-            d_w: d_w {
+        ht: holdtap {
             compatible = "zmk,behavior-hold-tap";
-            label = "d_w";
+            label = "HOLDTAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        accent: accent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "accent";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <125>;
-            bindings = <&kp D>, <&kp W>;
+            bindings = <&kp>, <&accented>;
         };
 
-        u_accent: u_accent {
-            compatible = "zmk,behavior-hold-tap";
-            label = "u_accent";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <125>;
-            bindings = <&kp U>, <&kp DE_SQT &kp U>;
-        };
-
-        a_accent: a_accent {
+ /*       a_accent: a_accent {
             compatible = "zmk,behavior-hold-tap";
             label = "a_accent";
             #binding-cells = <2>;
@@ -223,3 +223,33 @@ ZMK_BEHAVIOR(space_nav, hold_tap,
     quick-tap-ms = <125>;
     bindings = <&kp SPACE>, <&mo NAV>;
 )*/
+
+    macros {
+        udiaaccent: udiaaccent {
+            label = "udiaaccent";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N6 &kp KP_N9>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        accented: accented {   
+            label = "accented"; 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_SQT>
+                ;
+        };
+
+        ZMK_MACRO(thumbs_up,
+		    wait-ms = <1>;
+		    tap-ms = <5>;
+            bindings 
+                = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>
+                ;
+		)
+    };
