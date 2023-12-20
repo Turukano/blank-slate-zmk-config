@@ -24,6 +24,8 @@
 
 #define BT(n) BT_SEL n
 
+#define acc(keycode) &as keycode keycode
+
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
@@ -57,17 +59,17 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <125>;
-            bindings = <&kp>, <&accented>;
+            bindings = <&kp>, <& DE_SQT &kp>;
         };
     };
 
     macros {
-        accented: accented {   
+        /*accented: accented {   
             label = "accented"; 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp DE_SQT &kp keycode>;
-        };
+        };*/
     };
 
     keymap {
