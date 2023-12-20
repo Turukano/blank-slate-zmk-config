@@ -52,16 +52,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        lt: layertap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "layertap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&mo>, <&kp>;
-        };
-
         u_accent: u_accent {
             compatible = "zmk,behavior-hold-tap";
             label = "u_accent";
@@ -89,7 +79,7 @@
             label = "DEF";
             bindings = <
 &kp J &ht D W &u_accent U ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-&lt STRG C ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+&lt STRG C &lt T &lt I ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
