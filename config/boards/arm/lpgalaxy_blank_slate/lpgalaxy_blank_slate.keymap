@@ -59,7 +59,7 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <125>;
-            bindings = <&kp>, <& DE_SQT &kp>;
+            bindings = <&kp>, <&kp DE_SQT &kp>;
         };
     };
 
