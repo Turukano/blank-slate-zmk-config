@@ -241,8 +241,7 @@ ZMK_BEHAVIOR(space_nav, hold_tap,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp DE_SQT>
-                , <&macro_tap &kp A>
+                = <&macro_tap &kp DE_SQT &kp>
                 ;
         };
 

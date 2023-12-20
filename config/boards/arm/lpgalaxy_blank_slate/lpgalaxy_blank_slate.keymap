@@ -29,7 +29,7 @@
        zmk,matrix_transform = &ortho_transform;
     };
 
-//#include "layer_one.dtsi"
+#include "layer_one.dtsi"
 
     
     tap_dances {
