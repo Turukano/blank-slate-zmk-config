@@ -50,7 +50,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        accent: accent {
+       /* accent: accent {
             compatible = "zmk,behavior-hold-tap";
             label = "accent";
             #binding-cells = <2>;
@@ -58,18 +58,16 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <125>;
             bindings = <&kp>, <&accented>;
-        };
+        };*/
     };
 
     macros {
-        accented: accented {   
+        /*accented: accented {   
             label = "accented"; 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp DE_SQT &kp>
-                ;
-        };
+            bindings = <&macro_tap &kp DE_SQT &kp>;
+        };*/
     };
 
     keymap {
@@ -78,7 +76,7 @@
         def_layer {
             label = "DEF";
             bindings = <
-&ht A B &accent A ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+&ht A B ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
