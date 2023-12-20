@@ -50,7 +50,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        accent: accent {
+        acc: accent {
             compatible = "zmk,behavior-hold-tap";
             label = "accent";
             #binding-cells = <2>;
@@ -66,7 +66,7 @@
             label = "accented"; 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp DE_SQT &kp A>;
+            bindings = <&macro_tap &kp DE_SQT &kp keycode>;
         };
     };
 
@@ -76,7 +76,7 @@
         def_layer {
             label = "DEF";
             bindings = <
-&ht A B &accent A ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+&ht A B &acc A ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
