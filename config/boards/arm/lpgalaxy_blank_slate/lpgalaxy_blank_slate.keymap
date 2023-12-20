@@ -78,7 +78,7 @@
             label = "accentedu"; 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp DE_SQT &kp U>;
+            bindings = <&kp DE_SQT &kp U>;
         };
     };
 
@@ -89,7 +89,7 @@
             label = "DEF";
             bindings = <
 &kp J &ht D W &u_accent U ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-&slht STRG C ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+&lt STRG C ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
