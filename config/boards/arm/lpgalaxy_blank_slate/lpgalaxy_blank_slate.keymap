@@ -52,24 +52,24 @@
             bindings = <&kp>, <&kp>;
         };
 
-        acc: accent {
+        u_accent: u_accent {
             compatible = "zmk,behavior-hold-tap";
-            label = "accent";
+            label = "u_accent";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <125>;
-            bindings = <&kp>, <&kp DE_SQT &kp>;
+            bindings = <&kp>, <&accentedu>;
         };
     };
 
     macros {
-        /*accented: accented {   
-            label = "accented"; 
+        accentedu: accentedu {   
+            label = "accentedu"; 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp DE_SQT &kp keycode>;
-        };*/
+            bindings = <&macro_tap &kp DE_SQT &kp U>;
+        };
     };
 
     keymap {
@@ -78,7 +78,7 @@
         def_layer {
             label = "DEF";
             bindings = <
-&ht A B &acc A ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+&kp j &ht d w &u_accent u ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
