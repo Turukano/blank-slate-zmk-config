@@ -28,10 +28,7 @@
     chosen {
        zmk,matrix_transform = &ortho_transform;
     };
-
-#include "layer_one.dtsi"
-
-    
+ 
     tap_dances {
     	shifty: shift_caps_word {
 		compatible = "zmk,behavior-tap-dance";
@@ -39,7 +36,30 @@
 		#binding-cells = <0>;
 		tapping-term-ms = <150>;
 		bindings = <&kp LSHFT>, <&caps_word>;
-	};
+	    };
+    };
+
+    behaviors {
+        ht: holdtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    macros {
+        accented: accented {   
+            label = "accented"; 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_SQT &kp>
+                ;
+        };
     };
 
     keymap {
@@ -48,7 +68,7 @@
         def_layer {
             label = "DEF";
             bindings = <
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+&ht A B &accented A ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
