@@ -49,7 +49,7 @@
         def_layer {
             label = "DEF";
             bindings = <
-&kp J &ht D W &kp U &kp A &kp X ___ ___ ___ ___ ___ ___ ___ 
+&kp J &ht D W &kp U &kp A &kp X ___ ___ &ht DE_LBKT P	&ht DE_LPAR H	&ht DE_FSLH H	&ht DE_RPAR M	&ht DE_RBKT G
 &lt STRG C &lt NAV T &lt NUM I &kp E &kp O ___ ___ ___ ___  ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
