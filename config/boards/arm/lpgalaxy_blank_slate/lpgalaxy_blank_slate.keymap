@@ -13,6 +13,7 @@
 #define NAV         2 
 #define NUM         3
 #define STRG        4
+#define NAVSHIF     5   
 
 #include "german.dtsi"
 #include "functions.dtsi"
@@ -40,6 +41,30 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+        };
+    };
+
+    macros {
+        selectline: selectline {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp HOME>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp END>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+
+        selectpara: selectpara {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(PG_UP)>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp LC(PG_DN)>
+                , <&macro_release &kp LSHFT>
+                ;
         };
     };
 
@@ -72,8 +97,8 @@ ___	___	___	___	&kp DE_DQT	&kp DE_COLN	&kp LC(BSPC)	&kp SPACE	___	___	___	___
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht LC(LA(F)) LC(P)	&kp LC(LEFT)	&kp UP	&kp LC(RIGHT)	&kp DEL
 ___ ___ ___ ___ ___ ___ ___ &ht LC(PG_UP) HOME	&kp  LEFT	&kp DOWN	&kp RIGHT	&ht LC(PG_DN) END
-___ ___ ___ ___ ___ ___ ___ ___	&ht LC(X) LC(C) 	&hat LG(TAB) LA(TAB)	&ht K_APP LC(V)	___
-___ ___ ___ ___ &sl SHIF ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___	&ht LC(X) LC(C) 	&ht LG(TAB) LA(TAB)	&ht K_APP LC(V)	___
+___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
@@ -93,6 +118,16 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+            >;
+        };
+
+        navshif_layer {
+            label = "NAVSHIF";
+            bindings = <
+___ ___ ___ ___ ___ ___ ___ &kp LC(A)	&kp LC(LS(LEFT))	&kp LS(UP)	&kp LC(LS(RIGHT)) &kp DEL
+___ ___ ___ ___ ___ ___ ___ &selectpara	&kp  LS(LEFT)	&kp LS(DOWN)	&kp LS(RIGHT) &selectline
+___ ___ ___ ___ ___ ___ ___ ___ 	&ht LC(LS(K)) LC(B)	&ht LC(LS(U)) LC(U)	&ht LC(I) ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
