@@ -60,11 +60,14 @@ ___	___	___	___	&sl SHIF	&ht DE_EXCL DE_DOT	&kp BSPC	&lt NAV SPACE	___	___	___	_
         shif_layer {
             label = "SHIF";
             bindings = <
-&kp S(J)	&ht S(W) S(D)	&kp S(U)	&kp S(A)	&kp S(X)	___	___	&ht DE_LABK S(P)	&ht DE_LBRC S(H)	&ht DE_BSLH S(L)	&ht DE_RBRC S(M)	&ht DE_RABK S(G)
+/*&kp S(J)	&ht S(W) S(D)	&kp S(U)	&kp S(A)	&kp S(X)	___	___	&ht DE_LABK S(P)	&ht DE_LBRC S(H)	&ht DE_BSLH S(L)	&ht DE_RBRC S(M)	&ht DE_RABK S(G)
 &kp S(C) 	&kp S(T)	&kp S(I)	&kp S(E) 	&kp S(O)	___	___	&kp S(B)	&kp S(N)	&kp S(R) 	&kp S(S)	&ht C(ENTER) S(ENTER)
 &kp S(F)	&kp S(V)	&kp S(DE_UDIA)	&kp S(DE_ADIA)	&kp S(DE_ODIA)	___	___	&kp S(DE_Y)	&kp S(DE_Z)	&ht DE_UNDS DE_MINS	&kp DE_SEMI	&ht S(Q) S(K)
-___	___	___	___	&kp DE_DQT	&kp DE_COLN	&kp C(BSPC)	&kp SPACE	___	___	___	___
-
+___	___	___	___	&kp DE_DQT	&kp DE_COLN	&kp C(BSPC)	&kp SPACE	___	___	___	___*/
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
