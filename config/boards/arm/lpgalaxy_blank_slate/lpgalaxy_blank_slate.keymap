@@ -43,16 +43,13 @@
         };
     };
 
-    macros {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         def_layer {
             label = "DEF";
             bindings = <
-&kp J &ht S(D) W &kp U &kp A &kp X ___ ___ ___ ___ ___ ___ ___ 
+&kp J &ht D W &kp U &kp A &kp X ___ ___ ___ ___ ___ ___ ___ 
 &lt STRG C &lt NAV T &lt NUM I &kp E &kp O ___ ___ ___ ___  ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
