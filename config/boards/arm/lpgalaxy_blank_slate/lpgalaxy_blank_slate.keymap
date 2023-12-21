@@ -31,16 +31,6 @@
        zmk,matrix_transform = &ortho_transform;
     };
  
-    tap_dances {
-    	shifty: shift_caps_word {
-		compatible = "zmk,behavior-tap-dance";
-		label = "TD_SHIFTY";
-		#binding-cells = <0>;
-		tapping-term-ms = <150>;
-		bindings = <&kp LSHFT>, <&caps_word>;
-	    };
-    };
-
     behaviors {
         ht: holdtap {
             compatible = "zmk,behavior-hold-tap";
@@ -51,25 +41,9 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-
-        u_accent: u_accent {
-            compatible = "zmk,behavior-hold-tap";
-            label = "u_accent";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <125>;
-            bindings = <&kp>, <&accentedu>;
-        };
     };
 
     macros {
-        accentedu: accentedu {   
-            label = "accentedu"; 
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DE_SQT &kp U>;
-        };
     };
 
     keymap {
@@ -78,8 +52,8 @@
         def_layer {
             label = "DEF";
             bindings = <
-&kp J &ht D W &u_accent U ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-&lt STRG C &lt NAV T &lt NUM I ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+&kp J &ht S(D) W &kp U &kp A &kp X ___ ___ ___ ___ ___ ___ ___ 
+&lt STRG C &lt NAV T &lt NUM I &kp E &kp O ___ ___ ___ ___  ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
