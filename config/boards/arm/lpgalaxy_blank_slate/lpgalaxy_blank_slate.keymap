@@ -50,8 +50,8 @@
             label = "DEF";
             bindings = <
 &kp J &ht W D &kp U &kp A &kp X ___ ___ &ht DE_LBKT P	&ht DE_LPAR H	&ht DE_FSLH H	&ht DE_RPAR M	&ht DE_RBKT G
-&lt STRG c	&lt NAV t	&lt NUM i	&kp e	&kp o	___	___	&ht DE_QUES DE_Y	&kp n	&ht DE_ACUT R	&ht DE_SS S	&lt STRG ENTER
-&kp f	&kp v	&kp DE_UDIA	&kp DE_ADIA	&kp DE_ODIA	___	___	&kp DE_Y	&ht DE_AT DE_Z	&sl SHIF	&kp DE_COMM	&ht q k
+&lt STRG C	&lt NAV T	&lt NUM I	&kp E	&kp O	___	___	&ht DE_QUES DE_Y	&kp N	&ht DE_ACUT R	&ht DE_SS S	&lt STRG ENTER
+&kp F	&kp V	&kp DE_UDIA	&kp DE_ADIA	&kp DE_ODIA	___	___	&kp DE_Y	&ht DE_AT DE_Z	&sl SHIF	&kp DE_COMM	&ht Q K
 ___	___	___	___	&sl SHIF	&ht DE_EXCL DE_DOT	&kp BSPC	&lt NAV SPACE	___	___	___	___
             >;
         };
