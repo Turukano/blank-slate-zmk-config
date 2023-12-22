@@ -94,37 +94,58 @@
                 ;*/
         };
 
-/*              hu odia
-    register_code(KC_RALT);
-    tap_code(KC_KP_0);
-    tap_code(KC_KP_3);
-    tap_code(KC_KP_3);
-    tap_code(KC_KP_7);
-    unregister_code(KC_RALT);
+/*  
+        hu_odia: hu_odia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp N0>
+                , <&macro_tap &kp N3>
+                , <&macro_tap &kp N3>
+                , <&macro_tap &kp N7>
+                , <&macro_release &kp RALT>
+                ;
+        };
 
-    hu ODIA
-    register_code(KC_RALT);
-    tap_code(KC_KP_0);
-    tap_code(KC_KP_3);
-    tap_code(KC_KP_3);
-    tap_code(KC_KP_6);
-    unregister_code(KC_RALT);
+        hu_cap_odia: hu_cap_odia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp N0>
+                , <&macro_tap &kp N3>
+                , <&macro_tap &kp N3>
+                , <&macro_tap &kp N6>
+                , <&macro_release &kp RALT>
+                ;
+        };
 
-    hu udia
-    register_code(KC_RALT);
-    tap_code(KC_KP_0);
-    tap_code(KC_KP_3);
-    tap_code(KC_KP_6);
-    tap_code(KC_KP_9);
-    unregister_code(KC_RALT);
+        hu_udia: hu_udia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp N0>
+                , <&macro_tap &kp N3>
+                , <&macro_tap &kp N6>
+                , <&macro_tap &kp N9>
+                , <&macro_release &kp RALT>
+                ;
+        };
 
-    hu UDIA
-    register_code(KC_RALT);
-    tap_code(KC_KP_0);
-    tap_code(KC_KP_3);
-    tap_code(KC_KP_6);
-    tap_code(KC_KP_8);
-    unregister_code(KC_RALT);                     
+        hu_cap_udia: hu_cap_udia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RALT>
+                , <&macro_tap &kp N0>
+                , <&macro_tap &kp N3>
+                , <&macro_tap &kp N6>
+                , <&macro_tap &kp N8>
+                , <&macro_release &kp RALT>
+                ;
+        };                   
 */
 
     keymap {
