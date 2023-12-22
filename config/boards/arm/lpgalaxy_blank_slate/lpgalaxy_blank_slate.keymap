@@ -42,7 +42,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        plus_grad: plus_grad {
+        /*plus_grad: plus_grad {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <0>;
@@ -50,19 +50,10 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&plus>, <&grad>;
-        };
+        };*/
     };
 
     macros {
-        acc: acc {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings 
-                = <&macro_tap &kp DE_ACUT>
-                , <&macro_tap &kp>
-            ;
-        };
-
         selectline: selectline {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -85,7 +76,16 @@
                 ;
         };
 
-        grad: grad {
+        acc: acc {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings 
+                = <&macro_tap &kp DE_ACUT>
+                , <&macro_tap &kp>
+            ;
+        };
+        
+        /*grad: grad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -153,7 +153,7 @@
                 , <&macro_tap &kp N8>
                 , <&macro_release &kp RALT>
                 ;
-        }; 
+        }; */
     };                  
 
     keymap {
