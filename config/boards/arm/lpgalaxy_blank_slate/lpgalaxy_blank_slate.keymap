@@ -185,14 +185,10 @@ ___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___
         num_layer {
             label = "NUM";
             bindings = <
-/*___ ___ ___ ___ ___ ___ ___ &ht DE_LBKT DE_EXCL &ht DE_LPAR N6 &ht DE_FSLH N7 &ht DE_RPAR N8 &ht DE_RBKT N9
+___ ___ ___ ___ ___ ___ ___ &ht DE_LBKT DE_EXCL &ht DE_LPAR N6 &ht DE_FSLH N7 &ht DE_RPAR N8 &ht DE_RBKT N9
 ___ ___ ___ ___ ___ ___ ___  &ht DE_CIRC DE_STAR &ht DE_EURO N2 &ht DE_PERC N3 &ht DE_EQL N4 &ht ENTER N5
 ___ ___ ___ ___ ___ ___ ___ &ht DE_DEG DE_PLUS &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
-___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___ */
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___ 
             >;
         };
 
@@ -219,14 +215,10 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
         numshif_layer {
             label = "NUMSHIF";
             bindings = <
-/*___ ___ ___ ___ ___ ___ ___ &ht DE_LABK INT1 &ht DE_LBRC INT1 &ht DE_BSLH INT1 &ht DE_RBRC INT1
+___ ___ ___ ___ ___ ___ ___ &ht DE_LABK PAUSE_BREAK &ht DE_LBRC PAUSE_BREAK &ht DE_BSLH PAUSE_BREAK &ht DE_RBRC PAUSE_BREAK
 ___ ___ ___ ___ ___ ___ ___ ___ ___ &ht DE_UNDS DE_MINS &kp DE_SEMI
 ___ ___ ___ ___ ___ ___ ___ ___ &kp DE_DLR ___ &kp DE_TILD &ht LC(ENTER) LS(ENTER)
-___ ___ ___ ___ ___ ___ &kp C(BSPC) &kp SPACE ___ ___ ___ ___ */
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ &kp C(BSPC) &kp SPACE ___ ___ ___ ___ 
             >;
         };
 
