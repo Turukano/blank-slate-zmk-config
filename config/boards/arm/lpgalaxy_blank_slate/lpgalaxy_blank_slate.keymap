@@ -215,10 +215,14 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
         numshif_layer {
             label = "NUMSHIF";
             bindings = <
-___ ___ ___ ___ ___ ___ ___ &ht DE_LABK INT1 &ht DE_LBRC INT1 &ht DE_BSLH INT1 &ht DE_RBRC INT1
+/*___ ___ ___ ___ ___ ___ ___ &ht DE_LABK INT1 &ht DE_LBRC INT1 &ht DE_BSLH INT1 &ht DE_RBRC INT1
 ___ ___ ___ ___ ___ ___ ___ ___ ___ &ht DE_UNDS DE_MINS &kp DE_SEMI
 ___ ___ ___ ___ ___ ___ ___ ___ &kp DE_DLR ___ &kp DE_TILD &ht LC(ENTER) LS(ENTER)
-___ ___ ___ ___ ___ ___ &kp C(BSPC) &kp SPACE ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ &kp C(BSPC) &kp SPACE ___ ___ ___ ___ */
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
