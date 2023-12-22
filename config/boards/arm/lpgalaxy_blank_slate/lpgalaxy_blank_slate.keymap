@@ -76,7 +76,7 @@
                 ;
         };
 
-       /* grad: grad {
+       /grad: grad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -93,8 +93,7 @@
                 = <&macro_tap &kp DE_PLUS>
                 ;*/
         };
-
-/*  
+  
         hu_odia: hu_odia {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -145,8 +144,8 @@
                 , <&macro_tap &kp N8>
                 , <&macro_release &kp RALT>
                 ;
-        };                   
-*/
+        }; 
+    };                  
 
     keymap {
         compatible = "zmk,keymap";
