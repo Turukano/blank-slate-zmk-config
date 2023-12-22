@@ -74,30 +74,30 @@
         def_layer {
             label = "DEF";
             bindings = <
-&kp J &ht W D &kp U &kp A &kp X ___ ___ &ht DE_LBKT P	&ht DE_LPAR H	&ht DE_FSLH H	&ht DE_RPAR M	&ht DE_RBKT G
-&lt STRG C	&lt NAV T	&lt NUM I	&kp E	&kp O	___	___	&ht DE_QUES DE_Y	&kp N	&ht DE_ACUT R	&ht DE_SS S	&lt STRG ENTER
-&kp F	&kp V	&kp DE_UDIA	&kp DE_ADIA	&kp DE_ODIA	___	___	&kp DE_Y	&ht DE_AT DE_Z	&sl SHIF	&kp DE_COMM	&ht Q K
-___	___	___	___	&sl SHIF	&ht DE_EXCL DE_DOT	&kp BSPC	&lt NAV SPACE	___	___	___	___
-//als holdtap noch kennel@posteo.de Sächsische Str. 36, ...
+&kp J &ht W D &kp U &kp A &kp X ___ ___ &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH H &ht DE_RPAR M &ht DE_RBKT G
+&lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O ___ ___ &ht DE_QUES DE_Y &kp N &ht DE_ACUT R &ht DE_SS S &lt STRG ENTER
+&kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA ___ ___ &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
+___ ___ ___ ___ &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___ ___ ___
+//als holdtap noch kennel@posteo.de Sächsische Str. 36, ... smilies, programmstarts: keepass, 
             >;
         };
 
         shif_layer {
             label = "SHIF";
             bindings = <
-&kp LS(J)	&ht LS(W) LS(D)	&kp LS(U)	&kp LS(A)	&kp LS(X)	___	___	&ht DE_LABK LS(P)	&ht DE_LBRC LS(H)	&ht DE_BSLH LS(L)	&ht DE_RBRC LS(M)	&ht DE_RABK LS(G)
-&kp LS(C) 	&kp LS(T)	&kp LS(I)	&kp LS(E) 	&kp LS(O)	___	___	&kp LS(B)	&kp LS(N)	&kp LS(R) 	&kp LS(S)	&ht LC(ENTER) LS(ENTER)
-&kp LS(F)	&kp LS(V)	&kp LS(DE_UDIA)	&kp LS(DE_ADIA)	&kp LS(DE_ODIA)	___	___	&kp LS(DE_Y)	&kp LS(DE_Z)	&ht DE_UNDS DE_MINS	&kp DE_SEMI	&ht LS(Q) LS(K)
-___	___	___	___	&kp DE_DQT	&kp DE_COLN	&kp LC(BSPC)	&kp SPACE	___	___	___	___
+&kp LS(J) &ht LS(W) LS(D) &kp LS(U) &kp LS(A) &kp LS(X) ___ ___ &ht DE_LABK LS(P) &ht DE_LBRC LS(H) &ht DE_BSLH LS(L) &ht DE_RBRC LS(M) &ht DE_RABK LS(G)
+&kp LS(C)  &kp LS(T) &kp LS(I) &kp LS(E)  &kp LS(O) ___ ___ &kp LS(B) &kp LS(N) &kp LS(R)  &kp LS(S) &ht LC(ENTER) LS(ENTER)
+&kp LS(F) &kp LS(V) &kp LS(DE_UDIA) &kp LS(DE_ADIA) &kp LS(DE_ODIA) ___ ___ &kp LS(DE_Y) &kp LS(DE_Z) &ht DE_UNDS DE_MINS &kp DE_SEMI &ht LS(Q) LS(K)
+___ ___ ___ ___ &kp DE_DQT &kp DE_COLN &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
             >;
         };
 
         nav_layer {
             label = "NAV";
             bindings = <
-___ ___ ___ ___ ___ ___ ___ &ht LC(LA(F)) LC(P)	&kp LC(LEFT)	&kp UP	&kp LC(RIGHT)	&kp DEL
-___ ___ ___ ___ ___ ___ ___ &ht LC(PG_UP) HOME	&kp  LEFT	&kp DOWN	&kp RIGHT	&ht LC(PG_DN) END
-___ ___ ___ ___ ___ ___ ___ ___	&ht LC(X) LC(C) 	&ht LG(TAB) LA(TAB)	&ht K_APP LC(V)	___
+___ ___ ___ ___ ___ ___ ___ &ht LC(LA(F)) LC(P) &kp LC(LEFT) &kp UP &kp LC(RIGHT) &ht LA(F4) DEL
+___ ___ ___ ___ ___ ___ ___ &ht LC(PG_UP) HOME &kp  LEFT &kp DOWN &kp RIGHT &ht LC(PG_DN) END
+___ ___ ___ ___ ___ ___ ___ ___ &ht LC(X) LC(C)  &ht LG(TAB) LA(TAB) &ht K_APP LC(V) ___
 ___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
@@ -105,10 +105,10 @@ ___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___
         num_layer {
             label = "NUM";
             bindings = <
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ &ht DE_LBKT DE_EXCL	&ht DE_LPAR N6	&ht DE_FSLSH N7	&ht DE_RPAR N8	&ht DE_RLBKT N9
+___ ___ ___ ___ ___ ___ ___  &ht DE_CIRC DE_STAR	 &ht DE_EURO N2	 &ht DE_PERC N3	 &ht DE_EQL N4	 &ht ENTER N5
+___ ___ ___ ___ ___ ___ ___   &plus_grad	 &ht DE_SECT N1	 &ht DE_UNDS DE_MINS	 &kp DE_COMM	 &ht DE_HASH N0
+___ ___ ___ ___ ___ ___ &kp BSPC &kp SPACE ___ ___ ___ ___ 
             >;
         };
 
@@ -125,9 +125,9 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
         navshif_layer {
             label = "NAVSHIF";
             bindings = <
-___ ___ ___ ___ ___ ___ ___ &kp LC(A)	&kp LC(LS(LEFT))	&kp LS(UP)	&kp LC(LS(RIGHT)) &kp DEL
-___ ___ ___ ___ ___ ___ ___ &selectpara	&kp  LS(LEFT)	&kp LS(DOWN)	&kp LS(RIGHT) &selectline
-___ ___ ___ ___ ___ ___ ___ ___ 	&ht LC(LS(K)) LC(B)	&ht LC(LS(U)) LC(U)	&ht LC(I) ___ 
+___ ___ ___ ___ ___ ___ ___ &kp LC(A) &kp LC(LS(LEFT)) &kp LS(UP) &kp LC(LS(RIGHT)) &ht LA(F4) DEL
+___ ___ ___ ___ ___ ___ ___ &selectpara &kp  LS(LEFT) &kp LS(DOWN) &kp LS(RIGHT) &selectline
+___ ___ ___ ___ ___ ___ ___ ___  &ht LC(L) LC(B) &ht LC(J) LC(U) &ht LC(R) LC(I) ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
