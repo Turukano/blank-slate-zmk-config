@@ -78,9 +78,9 @@
                 ;
         };
 
-                grad: grad {
+        grad: grad {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             bindings
                 = <&macro_tap &kp DE_DEG>
                 , <&macro_tap &kp SPACE>
