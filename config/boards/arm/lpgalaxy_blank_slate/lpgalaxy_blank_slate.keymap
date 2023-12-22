@@ -26,8 +26,6 @@
 
 #define BT(n) BT_SEL n
 
-#define acc(keycode) &as keycode keycode
-
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
@@ -128,7 +126,6 @@
     tap_code(KC_KP_8);
     unregister_code(KC_RALT);                     
 */
-    };
 
     keymap {
         compatible = "zmk,keymap";
