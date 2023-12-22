@@ -44,7 +44,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        plus_grad: plus_grad {
+        /*plus_grad: plus_grad {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <0>;
@@ -52,7 +52,7 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&plus>, <&grad>;
-        };
+        };*/
     };
 
     macros {
@@ -78,7 +78,7 @@
                 ;
         };
 
-        grad: grad {
+       /* grad: grad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -93,8 +93,41 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp DE_PLUS>
-                ;
+                ;*/
         };
+
+/*              hu odia
+    register_code(KC_RALT);
+    tap_code(KC_KP_0);
+    tap_code(KC_KP_3);
+    tap_code(KC_KP_3);
+    tap_code(KC_KP_7);
+    unregister_code(KC_RALT);
+
+    hu ODIA
+    register_code(KC_RALT);
+    tap_code(KC_KP_0);
+    tap_code(KC_KP_3);
+    tap_code(KC_KP_3);
+    tap_code(KC_KP_6);
+    unregister_code(KC_RALT);
+
+    hu udia
+    register_code(KC_RALT);
+    tap_code(KC_KP_0);
+    tap_code(KC_KP_3);
+    tap_code(KC_KP_6);
+    tap_code(KC_KP_9);
+    unregister_code(KC_RALT);
+
+    hu UDIA
+    register_code(KC_RALT);
+    tap_code(KC_KP_0);
+    tap_code(KC_KP_3);
+    tap_code(KC_KP_6);
+    tap_code(KC_KP_8);
+    unregister_code(KC_RALT);                     
+*/
     };
 
     keymap {
