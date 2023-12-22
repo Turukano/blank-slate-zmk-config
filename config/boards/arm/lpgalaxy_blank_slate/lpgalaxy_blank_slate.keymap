@@ -169,7 +169,7 @@ ___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht DE_LBKT DE_EXCL &ht DE_LPAR N6 &ht DE_FSLH N7 &ht DE_RPAR N8 &ht DE_RBKT N9
 ___ ___ ___ ___ ___ ___ ___  &ht DE_CIRC DE_STAR &ht DE_EURO N2 &ht DE_PERC N3 &ht DE_EQL N4 &ht ENTER N5
-___ ___ ___ ___ ___ ___ ___ ___ &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
+___ ___ ___ ___ ___ ___ ___ &ht DE_DEG DE_PLUS &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
 ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___ 
             >;
         };
@@ -189,7 +189,7 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &kp LC(A) &kp LC(LS(LEFT)) &kp LS(UP) &kp LC(LS(RIGHT)) &ht LA(F4) DEL
 ___ ___ ___ ___ ___ ___ ___ &selectpara &kp  LS(LEFT) &kp LS(DOWN) &kp LS(RIGHT) &selectline
-___ ___ ___ ___ ___ ___ ___ ___  &ht LC(L) LC(B) &ht LC(J) LC(U) &ht LC(R) LC(I) ___ 
+___ ___ ___ ___ ___ ___ ___ ___ &ht LC(L) LC(B) &ht LC(J) LC(U) &ht LC(R) LC(I) ___ 
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
