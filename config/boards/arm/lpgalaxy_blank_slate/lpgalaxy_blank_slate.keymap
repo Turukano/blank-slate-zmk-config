@@ -43,6 +43,16 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+
+        plus_grad: plus_grad {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&grad>;
+        };
     };
 
     macros {
@@ -65,6 +75,16 @@
                 , <&macro_press &kp LSHFT>
                 , <&macro_tap &kp LC(PG_DN)>
                 , <&macro_release &kp LSHFT>
+                ;
+        };
+
+                grad: grad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_DEG>
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &kp LS(C)>
                 ;
         };
     };
@@ -107,8 +127,8 @@ ___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___
             label = "NUM";
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht DE_LBKT DE_EXCL	&ht DE_LPAR N6	&ht DE_FSLSH N7	&ht DE_RPAR N8	&ht DE_RLBKT N9
-___ ___ ___ ___ ___ ___ ___  &ht DE_CIRC DE_STAR	 &ht DE_EURO N2	 &ht DE_PERC N3	 &ht DE_EQL N4	 &ht ENTER N5
-___ ___ ___ ___ ___ ___ ___   &plus_grad	 &ht DE_SECT N1	 &ht DE_UNDS DE_MINS	 &kp DE_COMM	 &ht DE_HASH N0
+___ ___ ___ ___ ___ ___ ___  &ht DE_CIRC DE_STAR &ht DE_EURO N2 &ht DE_PERC N3 &ht DE_EQL N4 &ht ENTER N5
+___ ___ ___ ___ ___ ___ ___   &plus_grad DE_PLUS &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
 ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___ 
             >;
         };
@@ -137,7 +157,7 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             label = "NUMSHIF";
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht DE_LABK INT1	&ht DE_LBRC INT1	&ht DE_BSLH INT1	&ht DE_RBRC INT1
-___ ___ ___ ___ ___ ___ ___ ___	___	 &ht DE_UNDS DE_MINS	&kp DE_SEMI
+___ ___ ___ ___ ___ ___ ___ ___	___ &ht DE_UNDS DE_MINS	&kp DE_SEMI
 ___ ___ ___ ___ ___ ___ ___ ___	&kp DE_DLR	___	&kp DE_TILD &ht LC(ENTER) LS(ENTER)
 ___ ___ ___ ___ ___ ___ &kp C(BSPC)	&kp SPACE ___ ___ ___ ___ 
             >;
