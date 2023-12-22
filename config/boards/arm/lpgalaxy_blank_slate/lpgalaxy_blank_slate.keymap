@@ -42,7 +42,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        /*plus_grad: plus_grad {
+        plus_grad: plus_grad {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <0>;
@@ -50,7 +50,7 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&plus>, <&grad>;
-        };*/
+        };
     };
 
     macros {
@@ -91,7 +91,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp DE_PLUS>
-                ;*/
+                ;
         };
   
         hu_odia: hu_odia {
