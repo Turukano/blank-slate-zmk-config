@@ -14,7 +14,8 @@
 #define NUM         3
 #define STRG        4
 #define NAVSHIF     5
-#define NUMSHIF     6   
+#define NUMSHIF     6  
+#define STRGSHIF    7 
 
 #include "german.dtsi"
 #include "functions.dtsi"
@@ -76,7 +77,7 @@
                 ;
         };
 
-        /*acc: acc {
+        acc: acc {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings 
@@ -85,7 +86,7 @@
             ;
         };
         
-        grad: grad {
+        /*grad: grad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -203,10 +204,10 @@ ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___
         strg_layer {
             label = "STRG";
             bindings = <
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ &acc U &acc A ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ &acc I &acc E &acc O ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ &sl STRGSHIF ___ ___ 
+___ ___ ___ ___ &sl STRGSHIF ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
@@ -227,6 +228,16 @@ ___ ___ ___ ___ ___ ___ ___ &ht DE_LABK PAUSE_BREAK &ht DE_LBRC  PAUSE_BREAK &ht
 ___ ___ ___ ___ ___ ___ ___ ___	&kp DE_DLR	___	&kp DE_TILD	&ht LC(ENTER) LS(ENTER)
 ___ ___ ___ ___ ___ ___ ___ ___ ___	&ht DE_UNDS DE_MINS	&kp DE_SEMI ___
 ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___ 
+            >;
+        };
+
+        strgshif_layer {
+            label = "STRGSHIF";
+            bindings = <
+___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ 
             >;
         };
 
