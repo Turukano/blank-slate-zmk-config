@@ -100,7 +100,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp DE_DEG>
+                = <&macro_tap &kp B>
                 /*, <&macro_tap &kp SPACE>
                 , <&macro_tap &kp LS(C)>*/
                 ;
@@ -110,7 +110,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp DE_PLUS>
+                = <&macro_tap &kp A>
                 ;
         };
 
