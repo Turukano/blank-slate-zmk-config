@@ -46,22 +46,22 @@
         plus_grad: plus_grad {
             compatible = "zmk,behavior-hold-tap";
             label = "PLUSGRAD";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&plus>, <&grad>;
         };
 
-        /*mode_keepass: mode_keepass {
+        mode_keepass: mode_keepass {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLDTAP";
-            #binding-cells = <0>;
+            label = "MODEKEE";
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&mode>, <&keepass>;
-        };*/
+        };
     };
 
     macros {
@@ -101,8 +101,8 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp B>
-                /*, <&macro_tap &kp SPACE>
-                , <&macro_tap &kp LS(C)>*/
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &kp LS(C)>
                 ;
         };
 
@@ -114,7 +114,7 @@
                 ;
         };
 
-        /*mode: mode {
+        mode: mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -127,8 +127,12 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LGUI>
+                , <&macro_wait_time 500>
+                , <&macro_tap &kp K &kp E &kp E &kp P &kp A &kp S &kp S>
+                , <&macro_wait_time 500>
+                , <&macro_tap &kp ENTER>
                 ;
-        };*/
+        };
   
         hu_odia: hu_odia {
             compatible = "zmk,behavior-macro";
