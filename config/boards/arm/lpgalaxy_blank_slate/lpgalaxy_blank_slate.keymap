@@ -168,7 +168,7 @@
             bindings
                 = <&macro_tap &kp LGUI>
                 , <&macro_wait_time 500>
-                , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F &kp Y>
+                , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F &kp DE_Y>
                 , <&macro_wait_time 500>
                 , <&macro_tap &kp ENTER>
                 ;
