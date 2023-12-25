@@ -50,7 +50,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&plus>, <&grad>;
+            bindings = <&pluss>, <&gradd>;
         };
 
         mode_keepass: mode_keepass {
@@ -115,22 +115,22 @@
                 , <&macro_param_1to1>
             ;
         };
-        
-        grad: grad {
+
+        pluss: pluss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp C>
+                ;
+        };   
+
+        gradd: gradd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp B>
                /* , <&macro_tap &kp SPACE>
                 , <&macro_tap &kp LS(C)>*/
-                ;
-        };
-
-        plus: plus {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp C>
                 ;
         };
 
