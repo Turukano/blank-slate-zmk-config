@@ -43,14 +43,14 @@
             bindings = <&kp>, <&kp>;
         };
 
-        plus_grad: plus_grad { //not working
+        plus_grad: plus_grad { 
             compatible = "zmk,behavior-hold-tap";
             label = "PLUSGRAD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&pluss>, <&gradd>;
+            bindings = <&plus>, <&grad>;
         };
 
         mode_keepass: mode_keepass { 
@@ -63,17 +63,17 @@
             bindings = <&mode>, <&keepass>;
         };
 
-        louder_spotify: louder_spotify {        //not working
+        louder_spotify: louder_spotify {      
             compatible = "zmk,behavior-hold-tap";
             label = "LOUSPOT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&louderi>, <&spotify>;
+            bindings = <&louder>, <&spotify>;
         };
 
-        new_word: new_word { //not working
+        new_word: new_word { 
             compatible = "zmk,behavior-hold-tap";
             label = "NEWWORD";
             #binding-cells = <0>;
@@ -116,7 +116,7 @@
             ;
         };
 
-        pluss: pluss {
+        plus: plus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -124,7 +124,7 @@
                 ;
         };   
 
-        gradd: gradd {
+        grad: grad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -134,7 +134,7 @@
                 ;
         };
 
-        mode: mode { //running
+        mode: mode { 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -142,7 +142,7 @@
                 ;
         };
 
-        keepass: keepass { //running
+        keepass: keepass { 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -154,7 +154,7 @@
                 ;
         };
 
-        louderi: louderi {
+        louder: louder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
