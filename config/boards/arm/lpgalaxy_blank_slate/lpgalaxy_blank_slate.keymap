@@ -43,7 +43,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        plus_grad: plus_grad {
+        plus_grad: plus_grad { //not implemented
             compatible = "zmk,behavior-hold-tap";
             label = "PLUSGRAD";
             #binding-cells = <2>;
@@ -53,7 +53,7 @@
             bindings = <&pluss>, <&gradd>;
         };
 
-        mode_keepass: mode_keepass {
+        mode_keepass: mode_keepass { //working
             compatible = "zmk,behavior-hold-tap";
             label = "MODEKEE";
             #binding-cells = <2>;
@@ -63,7 +63,7 @@
             bindings = <&mode>, <&keepass>;
         };
 
-        louder_spotify: louder_spotify {        //moder_geepass geht, aber louder spotify nicht. Warum????s
+        louder_spotify: louder_spotify {        //not working
             compatible = "zmk,behavior-hold-tap";
             label = "LOUSPOT";
             #binding-cells = <0>;
@@ -73,7 +73,7 @@
             bindings = <&louderi>, <&spotify>;
         };
 
-        new_word: new_word {
+        new_word: new_word { //not working
             compatible = "zmk,behavior-hold-tap";
             label = "NEWWORD";
             #binding-cells = <2>;
@@ -134,7 +134,7 @@
                 ;
         };
 
-        mode: mode {
+        mode: mode { //running
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -142,7 +142,7 @@
                 ;
         };
 
-        keepass: keepass {
+        keepass: keepass { //running
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
