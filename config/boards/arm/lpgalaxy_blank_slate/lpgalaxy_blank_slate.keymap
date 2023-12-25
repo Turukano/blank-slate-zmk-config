@@ -56,7 +56,7 @@
         mode_keepass: mode_keepass { 
             compatible = "zmk,behavior-hold-tap";
             label = "MODEKEE";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
@@ -76,7 +76,7 @@
         new_word: new_word { 
             compatible = "zmk,behavior-hold-tap";
             label = "NEWWORD";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
@@ -277,7 +277,6 @@
 &lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O ___ ___ &ht DE_QUES DE_Y &kp N &ht DE_ACUT R &ht DE_SS S &lt STRG ENTER
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA ___ ___ &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
 ___ ___ ___ ___ &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___ ___ ___
-//als holdtap noch kennel@posteo.de Sächsische Str. 36, ... smilies, 
             >;
         };
 
@@ -345,8 +344,8 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
             label = "STRGSHIF";
             bindings = <
 ___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	___ 	&ht LA(F4) DEL
-___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&mode_keepass	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
-___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&new_word
+___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&mode_keepass 0	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
+___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&new_word 0
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
