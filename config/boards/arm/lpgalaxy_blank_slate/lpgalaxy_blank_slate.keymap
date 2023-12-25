@@ -258,13 +258,13 @@
                 ;
         }; 
 
-        /*sachsen: sachsen {
+        sachsen: sachsen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp 6>
                 ;
-        }; */
+        }; 
     };                  
 
     keymap {
@@ -316,7 +316,7 @@ ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___
             bindings = <
 ___ ___ &acc U &acc A ___ ___ ___ &ht FN_FFGOFORTH FN_REDO	&kp LS(TAB)	&ht LG(UP) PG_UP	&kp TAB	&ht FN_FFRECOV FN_FFXTAB
 ___ &ht LG(LS(T)) LG(LS(S)) &acc I &acc E &acc O ___ ___ &ht FN_FFGOBACK FN_UNDO	&ht LG(LEFT) FN_FFLEFT	&ht LG(D) PG_DN	&ht LG(RIGHT) FN_FFRIGHT	&kp ENTER
-___ ___ &hu_udia ___ &hu_odia ___ ___ ___	&ht LC(LS(P)) FN_FFNTAB	&sl STRGSHIF	&ht F5 LC(L)	&kennel
+___ ___ &hu_udia ___ &hu_odia ___ ___ &sachsen	&ht LC(LS(P)) FN_FFNTAB	&sl STRGSHIF	&ht F5 LC(L)	&kennel
 ___ ___ ___ ___ &sl STRGSHIF ___ &kp LC(BSPC) ___ ___ ___ ___ ___ 
             >;
         };
