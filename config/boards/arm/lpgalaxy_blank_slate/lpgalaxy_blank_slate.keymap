@@ -43,7 +43,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        plus_grad: plus_grad {
+        /*plus_grad: plus_grad {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <0>;
@@ -53,7 +53,7 @@
             bindings = <&plus>, <&grad>;
         };
 
-        /*mode_keepass: mode_keepass {
+        mode_keepass: mode_keepass {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <0>;
@@ -96,7 +96,7 @@
             ;
         };
         
-        grad: grad {
+        /*grad: grad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -113,6 +113,22 @@
                 = <&macro_tap &kp DE_PLUS>
                 ;
         };
+
+        mode: mode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_PLUS>
+                ;
+        };
+
+        keepass: keepass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI>
+                ;
+        };*/
   
         hu_odia: hu_odia {
             compatible = "zmk,behavior-macro";
