@@ -155,6 +155,18 @@
                 , <&macro_release &kp RALT>
                 ;
         }; 
+
+        kennel: kennel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp K &kp E &kp N &kp N &kp E &kp L>
+                , <&macro_press &kp RALT>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp RALT>
+                , <&macro_tap &kp P &kp O &kp S &kp T &kp E &kp O &kp DOT &kp D &kp E>
+                ;
+        }; 
     };                  
 
     keymap {
@@ -204,10 +216,10 @@ ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___
         strg_layer {
             label = "STRG";
             bindings = <
-___ ___ &acc U &acc A ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ &acc I &acc E &acc O ___ ___ ___ ___ ___ ___ ___ 
-___ ___ &hu_udia ___ &hu_odia ___ ___ ___ ___ &sl STRGSHIF ___ ___ 
-___ ___ ___ ___ &sl STRGSHIF ___ ___ ___ ___ ___ ___ ___ 
+___ ___ &acc U &acc A ___ ___ ___ &ht FN_FFGOFORTH FN_REDO	&kp LS(TAB)	&ht LG(UP) PG_UP	&kp TAB	&ht FN_FFRECOV FN_FFXTAB
+___ &ht LG(LS(T)) LG(LS(S)) &acc I &acc E &acc O ___ ___ &ht FN_FFGOBACK FN_UNDO	&ht LG(LEFT) FN_FFLEFT	&ht LG(D) PG_DN	&ht LG(RIGHT) FN_FFRIGHT	&kp ENTER
+___ ___ &hu_udia ___ &hu_odia ___ ___ ___	&ht LC(LS(P)) FN_FFNTAB	&sl STRGSHIF	&ht F5 LC(L)	&kennel
+___ ___ ___ ___ &sl STRGSHIF ___ &kp LC(BSPC) ___ ___ ___ ___ ___ 
             >;
         };
 
