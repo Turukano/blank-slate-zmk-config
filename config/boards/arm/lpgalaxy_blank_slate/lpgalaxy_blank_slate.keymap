@@ -43,7 +43,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        /*plus_grad: plus_grad {
+        plus_grad: plus_grad {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <0>;
@@ -51,6 +51,16 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&plus>, <&grad>;
+        };
+
+        /*mode_keepass: mode_keepass {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&mode>, <&keepass>;
         };*/
     };
 
@@ -86,7 +96,7 @@
             ;
         };
         
-        /*grad: grad {
+        grad: grad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -102,7 +112,7 @@
             bindings
                 = <&macro_tap &kp DE_PLUS>
                 ;
-        };*/
+        };
   
         hu_odia: hu_odia {
             compatible = "zmk,behavior-macro";

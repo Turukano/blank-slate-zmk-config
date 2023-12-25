@@ -17,7 +17,7 @@
 #define FN_PROJECT LG(P) //
 #define FN_STREAM LG(K) //
 #define FN_ROTATE LG(LS(R))
-#define FN_ZOOMIN LC(DE_PLUS) //
+#define FN_ZOOMIN LC(DE_PLUS) //dafür gibts auch ne Taste
 #define FN_ZOOMOUT LC(DE_MINS) //
 
 #define FN_DESKTOP LG(D) //
@@ -25,6 +25,8 @@
 #define FN_FULLSCRN LG(UP) //
 #define FN_DOCKLEFT LG(LEFT) //
 #define FN_DOCKRIGHT LG(RIGHT) //
+
+#define FN_REPL LC(H) //
 
 /*Firefox*/
 #define FN_FFLEFT LC(LS(TAB)) //auf LA left
