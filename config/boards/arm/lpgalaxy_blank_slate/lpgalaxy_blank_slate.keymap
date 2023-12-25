@@ -62,6 +62,26 @@
             flavor = "balanced";
             bindings = <&mode>, <&keepass>;
         };
+
+        louder_spotify: louder_spotify {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LOUDERSPOT";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&louder>, <&spotify>;
+        };
+
+        new_word: new_word {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEWWORD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&new>, <&word>;
+        };
     };
 
     macros {
@@ -133,6 +153,46 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
+
+        louder: louder {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp C_VOL_UP>
+                ;
+        };
+
+        spotify: spotify {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI>
+                , <&macro_wait_time 500>
+                , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F &kp Y>
+                , <&macro_wait_time 500>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+
+        new: new {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(N)>
+                ;
+        };
+
+        word: word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI>
+                , <&macro_wait_time 500>
+                , <&macro_tap &kp W &kp I &kp N &kp W &kp O &kp R &kp D>
+                , <&macro_wait_time 500>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
   
         hu_odia: hu_odia {
             compatible = "zmk,behavior-macro";
@@ -197,6 +257,14 @@
                 , <&macro_tap &kp P &kp O &kp S &kp T &kp E &kp O &kp DOT &kp D &kp E>
                 ;
         }; 
+
+        sachsen: sachsen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp 6>
+                ;
+        }; 
     };                  
 
     keymap {
@@ -209,7 +277,7 @@
 &lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O ___ ___ &ht DE_QUES DE_Y &kp N &ht DE_ACUT R &ht DE_SS S &lt STRG ENTER
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA ___ ___ &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
 ___ ___ ___ ___ &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___ ___ ___
-//als holdtap noch kennel@posteo.de Sächsische Str. 36, ... smilies, programmstarts: keepass, 
+//als holdtap noch kennel@posteo.de Sächsische Str. 36, ... smilies, 
             >;
         };
 
@@ -238,7 +306,7 @@ ___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht DE_LBKT DE_EXCL &ht DE_LPAR N6 &ht DE_FSLH N7 &ht DE_RPAR N8 &ht DE_RBKT N9
 ___ ___ ___ ___ ___ ___ ___  &ht DE_CIRC DE_STAR &ht DE_EURO N2 &ht DE_PERC N3 &ht DE_EQL N4 &ht ENTER N5
-___ ___ ___ ___ ___ ___ ___ &ht DE_DEG DE_PLUS &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
+___ ___ ___ ___ ___ ___ ___ &plus_grad &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
 ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___ 
             >;
         };
@@ -248,7 +316,7 @@ ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___
             bindings = <
 ___ ___ &acc U &acc A ___ ___ ___ &ht FN_FFGOFORTH FN_REDO	&kp LS(TAB)	&ht LG(UP) PG_UP	&kp TAB	&ht FN_FFRECOV FN_FFXTAB
 ___ &ht LG(LS(T)) LG(LS(S)) &acc I &acc E &acc O ___ ___ &ht FN_FFGOBACK FN_UNDO	&ht LG(LEFT) FN_FFLEFT	&ht LG(D) PG_DN	&ht LG(RIGHT) FN_FFRIGHT	&kp ENTER
-___ ___ &hu_udia ___ &hu_odia ___ ___ ___	&ht LC(LS(P)) FN_FFNTAB	&sl STRGSHIF	&ht F5 LC(L)	&kennel
+___ ___ &hu_udia ___ &hu_odia ___ ___ &sachsen	&ht LC(LS(P)) FN_FFNTAB	&sl STRGSHIF	&ht F5 LC(L)	&kennel
 ___ ___ ___ ___ &sl STRGSHIF ___ &kp LC(BSPC) ___ ___ ___ ___ ___ 
             >;
         };
