@@ -65,7 +65,7 @@
 
         louder_spotify: louder_spotify {        //moder_geepass geht, aber louder spotify nicht. Warum????s
             compatible = "zmk,behavior-hold-tap";
-            label = "LOUDERSPOT";
+            label = "LOUSPOT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
@@ -168,7 +168,7 @@
             bindings
                 = <&macro_tap &kp LGUI>
                 , <&macro_wait_time 500>
-                , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F &kp DE_Y>
+                , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F>
                 , <&macro_wait_time 500>
                 , <&macro_tap &kp ENTER>
                 ;
@@ -344,7 +344,7 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
         strgshif_layer {
             label = "STRGSHIF";
             bindings = <
-___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	___	&ht LA(F4) DEL
+___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	&louder_spotify	&ht LA(F4) DEL
 ___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	___	&ht LG(R) C_AC_ZOOM_OUT	&ht F12 LC(S)	&kp LA(N)
 ___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&mode_keepass
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
