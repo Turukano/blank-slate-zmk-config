@@ -306,7 +306,7 @@ ___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht DE_LBKT DE_EXCL &ht DE_LPAR N6 &ht DE_FSLH N7 &ht DE_RPAR N8 &ht DE_RBKT N9
 ___ ___ ___ ___ ___ ___ ___  &ht DE_CIRC DE_STAR &ht DE_EURO N2 &ht DE_PERC N3 &ht DE_EQL N4 &ht ENTER N5
-___ ___ ___ ___ ___ ___ ___ ___ &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
+___ ___ ___ ___ ___ ___ ___ &plus_grad &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
 ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___ 
             >;
         };
@@ -345,7 +345,7 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
             label = "STRGSHIF";
             bindings = <
 ___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	___	&ht LA(F4) DEL
-___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&new_word	&ht LG(R) C_AC_ZOOM_OUT	&ht F12 LC(S)	&kp LA(N)
+___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	___	&ht LG(R) C_AC_ZOOM_OUT	&ht F12 LC(S)	&kp LA(N)
 ___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&mode_keepass
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
