@@ -66,7 +66,7 @@
         louder_spotify: louder_spotify {        //moder_geepass geht, aber louder spotify nicht. Warum????s
             compatible = "zmk,behavior-hold-tap";
             label = "LOUSPOT";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
@@ -167,10 +167,10 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LGUI>
-                , <&macro_wait_time 500>
+               /* , <&macro_wait_time 500>
                 , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F>
                 , <&macro_wait_time 500>
-                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp ENTER>*/
                 ;
         };
 
