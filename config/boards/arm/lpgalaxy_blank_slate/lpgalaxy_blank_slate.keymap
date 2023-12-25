@@ -53,7 +53,7 @@
             bindings = <&plus>, <&grad>;
         };
 
-        /*mode_keepass: mode_keepass {
+        mode_keepass: mode_keepass {
             compatible = "zmk,behavior-hold-tap";
             label = "MODEKEE";
             #binding-cells = <2>;
@@ -63,7 +63,7 @@
             bindings = <&mode>, <&keepass>;
         };
 
-        louder_spotify: louder_spotify {
+        /*louder_spotify: louder_spotify {
             compatible = "zmk,behavior-hold-tap";
             label = "LOUDERSPOT";
             #binding-cells = <2>;
@@ -134,7 +134,7 @@
                 ;
         };
 
-        /*mode: mode {
+        mode: mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -154,7 +154,7 @@
                 ;
         };
 
-        louder: louder {
+        /*louder: louder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
