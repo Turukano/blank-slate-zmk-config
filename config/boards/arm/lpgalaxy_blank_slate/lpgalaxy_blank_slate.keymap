@@ -70,7 +70,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&louder>, <&spotify>;
+            bindings = <&louderi>, <&spotify>;
         };
 
         new_word: new_word {
@@ -154,7 +154,7 @@
                 ;
         };
 
-        louder: louder {
+        louderi: louderi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
