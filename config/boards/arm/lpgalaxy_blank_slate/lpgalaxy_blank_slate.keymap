@@ -130,7 +130,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp A>
+                = <&macro_tap &kp DE_PLUS>
                 ;
         };
 
@@ -138,7 +138,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp DE_PLUS>
+                = <&macro_tap &kp O &kp L &kp I &kp V &kp E &kp R>
                 ;
         };
 
@@ -344,9 +344,9 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
         strgshif_layer {
             label = "STRGSHIF";
             bindings = <
-___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ ___ ___ ___ ___ ___ 
-___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ ___ ___ ___ ___ ___ 
-___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___ ___ ___ ___ ___ 
+___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	&louder_spotify	&ht LA(F4) DEL
+___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&new_word	&ht LG(R) C_AC_ZOOM_OUT	&ht F12 LC(S)	&kp LA(N)
+___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&mode_keepass
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
