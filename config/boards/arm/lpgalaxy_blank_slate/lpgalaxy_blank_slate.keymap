@@ -113,6 +113,7 @@
             bindings 
                 = <&macro_tap &kp DE_ACUT>
                 , <&macro_param_1to1>
+                , <&kp MACRO_PLACEHOLDER>
             ;
         };
 
@@ -129,8 +130,8 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp B>
-               /* , <&macro_tap &kp SPACE>
-                , <&macro_tap &kp LS(C)>*/
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &kp LS(C)>
                 ;
         };
 
@@ -344,8 +345,8 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
             label = "STRGSHIF";
             bindings = <
 ___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	___ 	&ht LA(F4) DEL
-___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&mode_keepass 0	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
-___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&new_word 0
+___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&mode_keepass 0 0	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
+___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&new_word 0 0
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
