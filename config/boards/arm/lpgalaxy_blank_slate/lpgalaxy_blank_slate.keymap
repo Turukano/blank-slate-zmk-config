@@ -89,7 +89,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp>, <&sachsen>;
+            bindings = <&cap_s>, <&sachsen>;
         };
     };
 
@@ -275,6 +275,14 @@
                 = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp 6>
                 ;
         }; 
+
+        cap_s: cap_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LS(S)>
+                ;
+        }; 
     };                  
 
     keymap {
@@ -294,7 +302,7 @@ ___ ___ ___ ___ &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___ ___ _
             label = "SHIF";
             bindings = <
 &kp LS(J) &ht LS(W) LS(D) &kp LS(U) &kp LS(A) &kp LS(X) ___ ___ &ht DE_LABK LS(P) &ht DE_LBRC LS(H) &ht DE_BSLH LS(L) &ht DE_RBRC LS(M) &ht DE_RABK LS(G)
-&kp LS(C)  &kp LS(T) &kp LS(I) &kp LS(E)  &kp LS(O) ___ ___ &kp LS(B) &kp LS(N) &kp LS(R)  &s_sachsen 0 LS(S) &ht LC(ENTER) LS(ENTER)
+&kp LS(C)  &kp LS(T) &kp LS(I) &kp LS(E)  &kp LS(O) ___ ___ &kp LS(B) &kp LS(N) &kp LS(R)  &s_sachsen 0 0 &ht LC(ENTER) LS(ENTER)
 &kp LS(F) &kp LS(V) &kp LS(DE_UDIA) &kp LS(DE_ADIA) &kp LS(DE_ODIA) ___ ___ &kp LS(DE_Y) &kp LS(DE_Z) &ht DE_UNDS DE_MINS &kp DE_SEMI &ht LS(Q) LS(K)
 ___ ___ ___ ___ &kp DE_DQT &kp DE_COLN &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
             >;
