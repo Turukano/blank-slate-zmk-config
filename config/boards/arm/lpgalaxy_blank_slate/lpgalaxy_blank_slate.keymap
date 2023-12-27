@@ -276,6 +276,7 @@
                 = <&macro_press &kp LSHIF>
                 , <&macro_tap &kp TAB>
                 , <&macro_wait_time 1000>
+                , <&macro_release &kp LSHIF>
                 , <&macro_release &kp RALT>
                 ;
                 ;
