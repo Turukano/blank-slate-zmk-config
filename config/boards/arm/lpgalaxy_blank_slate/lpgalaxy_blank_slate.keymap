@@ -82,6 +82,15 @@
             flavor = "balanced";
             bindings = <&new>, <&word>;
         };
+
+        s_sachsen: s_sachsen { 
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&sachsen>;
+        };
     };
 
     macros {
@@ -121,7 +130,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp C>
+                = <&macro_tap &kp PLUS>
                 ;
         };   
 
@@ -139,7 +148,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp O &kp L &kp I &kp V &kp E &kp R>
+                = <&macro_tap &kp O &kp L &kp I &kp V &kp E &kp R &kp DOT &kp K &kp E &kp N &kp N &kp E &kp L &kp RA(Q) &kp M &kp O &kp D &kp E &kp S &kp C &kp U &kp L &kp E &kp MINUS &kp B &kp E &kp R &kp L &kp I &kp N &kp DOT &kp D &kp E>
                 ;
         };
 
@@ -159,7 +168,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp A>
+                = <&macro_tap &kp C_VOL_UP>
                 ;
         };
 
@@ -285,7 +294,7 @@ ___ ___ ___ ___ &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___ ___ _
             label = "SHIF";
             bindings = <
 &kp LS(J) &ht LS(W) LS(D) &kp LS(U) &kp LS(A) &kp LS(X) ___ ___ &ht DE_LABK LS(P) &ht DE_LBRC LS(H) &ht DE_BSLH LS(L) &ht DE_RBRC LS(M) &ht DE_RABK LS(G)
-&kp LS(C)  &kp LS(T) &kp LS(I) &kp LS(E)  &kp LS(O) ___ ___ &kp LS(B) &kp LS(N) &kp LS(R)  &kp LS(S) &ht LC(ENTER) LS(ENTER)
+&kp LS(C)  &kp LS(T) &kp LS(I) &kp LS(E)  &kp LS(O) ___ ___ &kp LS(B) &kp LS(N) &kp LS(R)  &s_sachsen 0 LS(S) &ht LC(ENTER) LS(ENTER)
 &kp LS(F) &kp LS(V) &kp LS(DE_UDIA) &kp LS(DE_ADIA) &kp LS(DE_ODIA) ___ ___ &kp LS(DE_Y) &kp LS(DE_Z) &ht DE_UNDS DE_MINS &kp DE_SEMI &ht LS(Q) LS(K)
 ___ ___ ___ ___ &kp DE_DQT &kp DE_COLN &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
             >;
@@ -306,7 +315,7 @@ ___ ___ ___ ___ &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht DE_LBKT DE_EXCL &ht DE_LPAR N6 &ht DE_FSLH N7 &ht DE_RPAR N8 &ht DE_RBKT N9
 ___ ___ ___ ___ ___ ___ ___  &ht DE_CIRC DE_STAR &ht DE_EURO N2 &ht DE_PERC N3 &ht DE_EQL N4 &ht ENTER N5
-___ ___ ___ ___ ___ ___ ___ ___ &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
+___ ___ ___ ___ ___ ___ ___ &plus_grad &ht DE_SECT N1 &ht DE_UNDS DE_MINS &kp DE_COMM &ht DE_HASH N0
 ___ ___ ___ ___ &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___ 
             >;
         };
