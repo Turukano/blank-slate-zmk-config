@@ -168,10 +168,10 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LGUI>
-               /* , <&macro_wait_time 500>
+                , <&macro_wait_time 500>
                 , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F>
                 , <&macro_wait_time 500>
-                , <&macro_tap &kp ENTER>*/
+                , <&macro_tap &kp ENTER>
                 ;
         };
 
@@ -344,9 +344,9 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
         strgshif_layer {
             label = "STRGSHIF";
             bindings = <
-___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	___ 	&ht LA(F4) DEL
-___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&mode_keepass 0 0	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
-___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&new_word 0 0
+___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	&louder_spotify 0 0	&ht LA(F4) DEL
+___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&new_word 0 0	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
+___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&mode_keepass 0 0
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
