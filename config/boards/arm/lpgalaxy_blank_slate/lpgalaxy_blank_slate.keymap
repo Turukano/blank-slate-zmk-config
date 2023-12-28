@@ -332,7 +332,7 @@ combos {
 
         combo_tab {
             timeout-ms = <50>;
-            key-positions = 9 10>;
+            key-positions = <9 10>;
             bindings = <&kp TAB>;
         };
 
