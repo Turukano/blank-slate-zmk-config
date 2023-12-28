@@ -279,7 +279,6 @@
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RALT>
                 ;
-                ;
         }; 
 
         rtabber: rtabber {
