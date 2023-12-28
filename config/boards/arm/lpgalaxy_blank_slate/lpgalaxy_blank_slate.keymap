@@ -273,10 +273,10 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RALT>
-                , <&macro_press &kp LSHIF>
+                , <&macro_press &kp LSHFT>
                 , <&macro_tap &kp TAB>
                 , <&macro_wait_time 1000>
-                , <&macro_release &kp LSHIF>
+                , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RALT>
                 ;
                 ;
