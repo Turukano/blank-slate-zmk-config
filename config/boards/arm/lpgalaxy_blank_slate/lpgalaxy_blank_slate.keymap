@@ -338,19 +338,19 @@ combos {
 
         combo_switch {
             timeout-ms = <50>;
-            key-positions = 20 21 22>;
+            key-positions = <20 21 22>;
             bindings = <&kp RA(TAB)>;
         };
 
         combo_ltabber {
             timeout-ms = <50>;
-            key-positions = 20 21>;
+            key-positions = <20 21>;
             bindings = <&ltabber>;
         };
 
         combo_rtabber {
             timeout-ms = <50>;
-            key-positions = 21 22>;
+            key-positions = <21 22>;
             bindings = <&rtabber>;
         };
     };
