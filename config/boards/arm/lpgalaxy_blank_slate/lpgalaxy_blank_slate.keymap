@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -358,7 +358,7 @@ combos {
             label = "DEF";
             bindings = <
 &kp J &ht W D &kp U &kp A &kp X ___ ___ &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
-&lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O ___ ___ &ht DE_QUES DE_Y &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G
+&lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O ___ ___ &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA ___ ___ &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
 ___ ___ ___ ___ &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___ ___ ___
             >;
