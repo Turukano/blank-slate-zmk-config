@@ -23,17 +23,16 @@
 
 #define BT(n) BT_SEL n
 
+    &lt {
+            hold-trigger-key-positions = <15>;
+    };
+
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
     };
 
     behaviors {
-
-        &lt {
-            hold-trigger-key-positions = <15>;
-        };
-
         ht: holdtap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
@@ -355,7 +354,7 @@ combos {
         };
     };
 
-    
+
     keymap {
         compatible = "zmk,keymap";
 
