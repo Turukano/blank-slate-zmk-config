@@ -27,15 +27,20 @@
     chosen {
        zmk,matrix_transform = &ortho_transform;
     };
- 
+
     behaviors {
+
+        &lt {
+            hold-trigger-key-positions = <15>;
+        };
+
         ht: holdtap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <250>; //überprüfen
+            quick-tap-ms = <0>; //überprüfen
+            flavor = "tap-preferred"; //überprüfen
             bindings = <&kp>, <&kp>;
         };
 
