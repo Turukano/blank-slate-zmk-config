@@ -17,6 +17,7 @@
 #include "german.dtsi"
 #include "functions.dtsi"
 #include "combos.dtsi"
+#include "helper.h"
 
 #define BT(n) BT_SEL n
 
@@ -24,6 +25,11 @@
             hold-trigger-key-positions = <15>;
             quick_tap_ms = <200>;
     };
+
+ZMK_BEHAVIOR(swapper, tri_state,
+    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+    ignored-key-positions = <LT2>;
+)
 
 / {
     chosen {
