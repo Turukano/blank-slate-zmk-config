@@ -4,11 +4,20 @@ manifest:
       url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-    - name: blank-slate-zmk-module
       remote: petejohanson
-      revision: main
+      revision: features/soft-off-take-2
+      import: app/west.yml
   self:
     path: config
+
+#manifest:
+ # remotes:
+  #  - name: urob
+   #   url-base: https://github.com/urob
+ # projects:
+  #  - name: zmk
+   #   remote: urob
+    #  revision: main
+     # import: app/west.yml
+ # self:
+  #  path: config
