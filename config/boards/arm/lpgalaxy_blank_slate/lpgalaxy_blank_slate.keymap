@@ -18,13 +18,11 @@
 #include "functions.dtsi"
 #include "combos.dtsi"
 
-// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
-
 #define BT(n) BT_SEL n
 
     &lt {
             hold-trigger-key-positions = <15>;
+            quick_tap_ms = <200>;
     };
 
 / {
