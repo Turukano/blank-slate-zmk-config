@@ -16,7 +16,6 @@
 
 #include "german.dtsi"
 #include "functions.dtsi"
-#include "combos.dtsi"
 #include "helper.h"
 
 #define BT(n) BT_SEL n
@@ -312,7 +311,7 @@
         }; 
     };                  
 
-
+#include "combos.dtsi"
 
 
     keymap {
