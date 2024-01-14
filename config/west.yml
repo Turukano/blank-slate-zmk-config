@@ -1,15 +1,14 @@
 manifest:
   remotes:
-  #  - name: urob
-    - name: petejohanson      
-  #     url-base: https://github.com/urob
-     url-base: https://github.com/petejohanson
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-   #    remote: urob  
-    remote: petejohanson
-  #    revision: main   
-     revision: features/soft-off-take-2
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    - name: blank-slate-zmk-module
+      remote: petejohanson
+      revision: main
   self:
     path: config
