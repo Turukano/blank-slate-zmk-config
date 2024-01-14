@@ -21,7 +21,7 @@
 #define BT(n) BT_SEL n
 
     &lt {
-            hold-trigger-key-positions = <15>;
+            //hold-trigger-key-positions = <15>;
             quick_tap_ms = <200>;
     };
 
