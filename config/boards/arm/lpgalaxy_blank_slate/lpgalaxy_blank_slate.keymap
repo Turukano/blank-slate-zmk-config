@@ -25,9 +25,9 @@
             quick_tap_ms = <200>;
     };
 
-/*ZMK_BEHAVIOR(swapper, tri_state,
+ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-)*/
+)
 
 / {
     chosen {
