@@ -23,9 +23,9 @@
 
 #define BT(n) BT_SEL n
 
-/*    &lt {
+    &lt {
             hold-trigger-key-positions = <15>;
-    };*/
+    };
 
 / {
     chosen {
