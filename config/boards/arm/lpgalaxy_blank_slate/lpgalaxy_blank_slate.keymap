@@ -29,6 +29,10 @@ ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
 )
 
+ZMK_BEHAVIOR(bswapper, tri_state,
+    bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>;
+)
+
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
