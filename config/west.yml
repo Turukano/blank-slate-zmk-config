@@ -1,23 +1,23 @@
+#manifest:
+ # remotes:
+  #  - name: petejohanson
+   #   url-base: https://github.com/petejohanson
+#  projects:
+ #   - name: zmk
+  #    remote: petejohanson
+   #   revision: features/soft-off-take-2
+    #  import: app/west.yml
+#  self:
+ #   path: config
+
 manifest:
   remotes:
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: features/soft-off-take-2
+      remote: urob
+      revision: main-with-native-mouse
       import: app/west.yml
   self:
     path: config
-
-#manifest:
- # remotes:
-  #  - name: urob
-   #   url-base: https://github.com/urob
- # projects:
-  #  - name: zmk
-   #   remote: urob
-    #  revision: main
-     # import: app/west.yml
- # self:
-  #  path: config
