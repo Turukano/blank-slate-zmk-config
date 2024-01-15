@@ -34,11 +34,11 @@
     };
 
 ZMK_BEHAVIOR(swapper, tri_state,
-    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+    bindings = <&rtabber>;
 )
 
 ZMK_BEHAVIOR(bswapper, tri_state,
-    bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>;
+    bindings = <&ltabber>;
 )
 
 / {
