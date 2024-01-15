@@ -25,7 +25,7 @@
 
 #define BT(n) BT_SEL n
 
-//todo: HRMs so modifizieren, dass nicht gerollt werden kann. Außerdem tapping term, quick tap und flavor ausprobieren. Außerdem alle Tasten mal probieren. Lösung für Enter auf linken Daumen.
+//todo: HRMs so modifizieren, dass nicht gerollt werden kann. Außerdem tapping term, quick tap und flafr ausprobieren. Außerdem alle Tasten mal probieren. Lösung für Enter auf linken Daumen.
 
     &lt {
             hold-trigger-key-positions = <KEYS_R>;
@@ -63,7 +63,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&plus>, <&grad>;
+            bindings = <&grad>, <&plus>;
         };
 
         mode_keepass: mode_keepass { 
@@ -73,7 +73,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&mode>, <&keepass>;
+            bindings = <&keepass>, <&mode>;
         };
 
         louder_spotify: louder_spotify {      
@@ -83,7 +83,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&louder>, <&spotify>;
+            bindings = <&spotify>, <&louder>;
         };
 
         new_word: new_word { 
@@ -93,7 +93,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&new>, <&word>;
+            bindings = <&word>, <&new>;
         };
 
         s_sachsen: s_sachsen { 
@@ -102,7 +102,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&cap_s>, <&sachsen>;
+            bindings = <&sachsen>, <&cap_s>;
         };
     };
 
@@ -309,7 +309,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp 6>
+                = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp N6>
                 ;
         }; 
 
