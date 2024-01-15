@@ -34,11 +34,11 @@
     };
 
 ZMK_BEHAVIOR(swapper, tri_state,
-    bindings = <&rtabber>;
+    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
 )
 
 ZMK_BEHAVIOR(bswapper, tri_state,
-    bindings = <&ltabber>;
+    bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>;
 )
 
 / {
@@ -223,10 +223,10 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RALT>
-                , <&macro_tap &kp N0>
-                , <&macro_tap &kp N3>
-                , <&macro_tap &kp N3>
-                , <&macro_tap &kp N7>
+                , <&macro_tap &kp KP_N0>
+                , <&macro_tap &kp KP_N3>
+                , <&macro_tap &kp KP_N3>
+                , <&macro_tap &kp KP_N7>
                 , <&macro_release &kp RALT>
                 ;
         };
@@ -236,10 +236,10 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RALT>
-                , <&macro_tap &kp N0>
-                , <&macro_tap &kp N3>
-                , <&macro_tap &kp N3>
-                , <&macro_tap &kp N6>
+                , <&macro_tap &kp KP_N0>
+                , <&macro_tap &kp KP_N3>
+                , <&macro_tap &kp KP_N3>
+                , <&macro_tap &kp KP_N6>
                 , <&macro_release &kp RALT>
                 ;
         };
@@ -249,10 +249,10 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RALT>
-                , <&macro_tap &kp N0>
-                , <&macro_tap &kp N3>
-                , <&macro_tap &kp N6>
-                , <&macro_tap &kp N9>
+                , <&macro_tap &kp KP_N0>
+                , <&macro_tap &kp KP_N3>
+                , <&macro_tap &kp KP_N6>
+                , <&macro_tap &kp KP_N9>
                 , <&macro_release &kp RALT>
                 ;
         };
@@ -262,10 +262,10 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RALT>
-                , <&macro_tap &kp N0>
-                , <&macro_tap &kp N3>
-                , <&macro_tap &kp N6>
-                , <&macro_tap &kp N8>
+                , <&macro_tap &kp KP_N0>
+                , <&macro_tap &kp KP_N3>
+                , <&macro_tap &kp KP_N6>
+                , <&macro_tap &kp KP_N8>
                 , <&macro_release &kp RALT>
                 ;
         }; 
