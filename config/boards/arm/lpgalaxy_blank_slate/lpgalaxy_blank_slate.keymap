@@ -30,6 +30,7 @@
     &lt {
             hold-trigger-key-positions = <KEYS_R>;
             quick_tap_ms = <200>;
+            flavor = "tap-preferred";
     };
 
 ZMK_BEHAVIOR(swapper, tri_state,
