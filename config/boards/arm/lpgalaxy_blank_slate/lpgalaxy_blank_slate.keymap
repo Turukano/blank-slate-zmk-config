@@ -162,7 +162,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp O &kp L &kp I &kp V &kp E &kp R &kp DOT &kp K &kp E &kp N &kp N &kp E &kp L &kp RA(Q) &kp M &kp O &kp D &kp E &kp S &kp C &kp U &kp L &kp E &kp MINUS &kp B &kp E &kp R &kp L &kp I &kp N &kp DOT &kp D &kp E>
+                = <&macro_tap &kp O &kp L &kp I &kp V &kp E &kp R &kp DOT &kp K &kp E &kp N &kp N &kp E &kp L &kp RA(Q) &kp M &kp O &kp D &kp E &kp S &kp C &kp H &kp U &kp L &kp E &kp MINUS &kp B &kp E &kp R &kp L &kp I &kp N &kp DOT &kp D &kp E>
                 ;
         };
 
@@ -332,7 +332,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
         def_layer {
             label = "DEF";
             bindings = <
-&kp J &ht W D &kp U &kp A &kp X ___ ___ &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
+&kp J &ht W D &kp U &kp A &kp X ___ &kp LS(PAUSE_BREAK)  &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
 &lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O ___ ___ &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA ___ ___ &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
 ___ ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___ ___ ___
@@ -394,7 +394,7 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht DE_LABK PAUSE_BREAK &ht DE_LBRC  PAUSE_BREAK &ht DE_BSLH  PAUSE_BREAK &ht DE_RBRC  PAUSE_BREAK &ht DE_RABK PAUSE_BREAK
 ___ ___ ___ ___ ___ ___ ___ &bswapper	&kp DE_DLR	&swapper	&kp DE_TILD	&ht LC(ENTER) LS(ENTER)
-___ ___ ___ ___ ___ ___ ___ ___ ___	&ht DE_UNDS DE_MINS	&kp DE_SEMI ___
+___ ___ ___ ___ ___ ___ ___ &kp DE_AMPS ___	&ht DE_UNDS DE_MINS	&kp DE_SEMI ___
 ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___ 
             >;
         };
