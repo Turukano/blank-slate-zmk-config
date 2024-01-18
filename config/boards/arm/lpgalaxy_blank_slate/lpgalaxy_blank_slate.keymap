@@ -345,7 +345,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
 &kp J &ht W D &kp U &kp A &kp X &word &ht LS(PAUSE_BREAK) PAUSE_BREAK &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
 &lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O &kennel_mode 0 0 &ht LG(E) LG(R) &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA &spotify &keepass &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
-___ ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___ ___ ___
+___ ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE &kp ENTER ___ ___ ___
             >;
         };
 
@@ -355,7 +355,7 @@ ___ ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE ___ ___
 &kp LS(J) &ht LS(W) LS(D) &kp LS(U) &kp LS(A) &kp LS(X) ___ ___ &ht DE_LABK LS(P) &ht DE_LBRC LS(H) &ht DE_BSLH LS(L) &ht DE_RBRC LS(M) &ht DE_RABK LS(W)
 &kp LS(C)  &kp LS(T) &kp LS(I) &kp LS(E)  &kp LS(O) ___ ___ &kp LS(B) &kp LS(N) &kp LS(R)  &s_sachsen 0 0 &ht LS(ENTER) LS(G)
 &kp LS(F) &kp LS(V) &kp LS(DE_UDIA) &kp LS(DE_ADIA) &kp LS(DE_ODIA) ___ ___ &kp LS(DE_Y) &kp LS(DE_Z) &ht DE_UNDS DE_MINS &kp DE_SEMI &ht LS(Q) LS(K)
-___ ___ ___ &kp LS(ENTER) &kp DE_DQT &kp DE_COLN &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
+___ ___ ___ &kp LS(ENTER) &kp DE_DQT &kp DE_COLN &kp LC(BSPC) &kp SPACE &kp LS(ENTER) ___ ___ ___
             >;
         };
 
@@ -365,7 +365,7 @@ ___ ___ ___ &kp LS(ENTER) &kp DE_DQT &kp DE_COLN &kp LC(BSPC) &kp SPACE ___ ___ 
 ___ ___ ___ ___ ___ ___ ___ &ht LC(LA(F)) LC(P) &kp LC(LEFT) &kp UP &kp LC(RIGHT) &ht LA(F4) DEL
 ___ ___ ___ ___ ___ ___ ___ &ht LC(PG_UP) HOME &kp  LEFT &kp DOWN &kp RIGHT &ht LC(PG_DN) END
 ___ ___ ___ ___ ___ ___ ___ ___ &ht LC(X) LC(C)  &ht LG(TAB) LA(TAB) &ht K_APP LC(V) ___
-___ ___ ___ &kp ENTER &sl NAVSHIF ___ ___ ___ ___ ___ ___ ___ 
+___ ___ ___ &kp ENTER &sl NAVSHIF ___ ___ ___ &kp ENTER ___ ___ ___ 
             >;
         };
 
@@ -385,7 +385,7 @@ ___ ___ ___ &kp ENTER &sl NUMSHIF ___ &kp BSPC &kp SPACE ___ ___ ___ ___
 &bootloader ___ &acc U &acc A ___ ___ ___ &ht FN_FFGOFORTH FN_REDO	&kp LS(TAB)	&ht LG(UP) PG_UP	&kp TAB	&ht FN_FFRECOV FN_FFXTAB
 ___ &ht LG(LS(T)) LG(LS(S)) &acc I &acc E &acc O ___ ___ &ht FN_FFGOBACK FN_UNDO	&ht LG(LEFT) FN_FFLEFT	&ht LG(D) PG_DN	&ht LG(RIGHT) FN_FFRIGHT	&kp LC(ENTER)
 ___ ___ &hu_udia ___ &hu_odia ___ ___ &sachsen	&ht LC(LS(P)) FN_FFNTAB	&sl STRGSHIF	&ht F5 LC(L)	&kennel
-___ ___ ___ &kp LC(ENTER) &sl STRGSHIF ___ &kp LC(BSPC) ___ ___ ___ ___ ___ 
+___ ___ ___ &kp LC(ENTER) &sl STRGSHIF ___ &kp LC(BSPC) ___ ___ &kp LC(ENTER) ___ ___ 
             >;
         };
 
