@@ -180,6 +180,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
+                = <&macro_tap_time 10>
                 = <&macro_tap &kp LGUI>
                 , <&macro_wait_time 500>
                 , <&macro_tap &kp K &kp E &kp E &kp P &kp A &kp S &kp S>
@@ -200,6 +201,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
+                = <&macro_tap_time 10>
                 = <&macro_tap &kp LGUI>
                 , <&macro_wait_time 500>
                 , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F>
@@ -220,6 +222,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
+                = <&macro_tap_time 10>
                 = <&macro_tap &kp LGUI>
                 , <&macro_wait_time 500>
                 , <&macro_tap &kp W &kp I &kp N &kp W &kp O &kp R &kp D>
