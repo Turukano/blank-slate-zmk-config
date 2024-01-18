@@ -33,12 +33,12 @@ combos {
         combo_ltabber {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            bindings = <&bswapper>;
+            bindings = <&ltabber>;
         };
 
         combo_rtabber {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            bindings = <&swapper>;
+            bindings = <&rtabber>;
         };
     };
