@@ -200,7 +200,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             #binding-cells = <0>;
             wait-ms = <500>;
             bindings
-                , <&kp LGUI>
+                = <&kp LGUI>
                 , <&kp S &kp P &kp O &kp T &kp I &kp F>
                 , <&kp ENTER>
                 ;
