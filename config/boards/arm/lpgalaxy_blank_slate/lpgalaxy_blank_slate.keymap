@@ -179,13 +179,11 @@ ZMK_BEHAVIOR(bswapper, tri_state,
         keepass: keepass { 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <500>;
             bindings
-                = <&macro_tap_time 10>
-                , <&macro_tap &kp LGUI>
-                , <&macro_wait_time 500>
-                , <&macro_tap &kp K &kp E &kp E &kp P &kp A &kp S &kp S>
-                , <&macro_wait_time 500>
-                , <&macro_tap &kp ENTER>
+                = <&kp LGUI>
+                , <&kp K &kp E &kp E &kp P &kp A &kp S &kp S>
+                , <&kp ENTER>
                 ;
         };
 
@@ -200,13 +198,11 @@ ZMK_BEHAVIOR(bswapper, tri_state,
         spotify: spotify {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <500>;
             bindings
-                = <&macro_tap_time 10>
-                , <&macro_tap &kp LGUI>
-                , <&macro_wait_time 500>
-                , <&macro_tap &kp S &kp P &kp O &kp T &kp I &kp F>
-                , <&macro_wait_time 500>
-                , <&macro_tap &kp ENTER>
+                , <&kp LGUI>
+                , <&kp S &kp P &kp O &kp T &kp I &kp F>
+                , <&kp ENTER>
                 ;
         };
 
@@ -221,12 +217,10 @@ ZMK_BEHAVIOR(bswapper, tri_state,
         word: word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <500>;
             bindings
-                = <&macro_tap_time 10>
-                , <&macro_tap &kp LGUI>
-                , <&macro_wait_time 500>
-                , <&macro_tap &kp W &kp I &kp N &kp W &kp O &kp R &kp D>
-                , <&macro_wait_time 500>
+                =  <&kp LGUI>
+                , <&kp W &kp I &kp N &kp W &kp O &kp R &kp D>
                 , <&macro_tap &kp ENTER>
                 ;
         };
@@ -348,7 +342,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
 &kp J &ht W D &kp U &kp A &kp X &word &ht LS(PAUSE_BREAK) PAUSE_BREAK &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
 &lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O &kennel_mode 0 0 &ht LG(E) LG(R) &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA &spotify &keepass &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
-___ ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE &kp ENTER ___ ___ ___
+&ltabber ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE &kp ENTER ___ ___ &rtabber
             >;
         };
 
