@@ -218,11 +218,13 @@ ZMK_BEHAVIOR(bswapper, tri_state,
         word: word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <5>;
-            tap-ms = <500>;
+            wait-ms = <500>;
+            tap-ms = <5>;
             bindings
                 =  <&kp LGUI>
+                , <&macro_wait_time 20>
                 , <&kp W &kp I &kp N &kp W &kp O &kp R &kp D>
+                , <&macro_wait_time 500>
                 , <&macro_tap &kp ENTER>
                 ;
         };
