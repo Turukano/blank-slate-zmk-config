@@ -28,7 +28,7 @@
 //todo: HRMs so modifizieren, dass nicht gerollt werden kann. Außerdem tapping term, quick tap und flafr ausprobieren. Außerdem alle Tasten mal probieren. Lösung für Enter auf linken Daumen.
 
     &lt {
-            hold-trigger-key-positions = <KEYS_R>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
             quick_tap_ms = <200>;
             flavor = "tap-preferred";
     };
