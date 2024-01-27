@@ -13,6 +13,7 @@
 #define NAVSHIF     5
 #define NUMSHIF     6  
 #define STRGSHIF    7 
+#define ALTTAB      8
 
 #include "german.dtsi"
 #include "functions.dtsi"
@@ -67,7 +68,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             bindings = <&grad>, <&plus>;
         };
 
-        mode_keepass: mode_keepass { 
+     /*   mode_keepass: mode_keepass { 
             compatible = "zmk,behavior-hold-tap";
             label = "MODEKEE";
             #binding-cells = <2>;
@@ -75,7 +76,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&keepass>, <&mode>;
-        };
+        };*/
 
         kennel_mode: kennel_mode { 
             compatible = "zmk,behavior-hold-tap";
@@ -87,7 +88,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             bindings = <&mode>, <&kennel>;
         };
 
-        louder_spotify: louder_spotify {      
+  /*      louder_spotify: louder_spotify {      
             compatible = "zmk,behavior-hold-tap";
             label = "LOUSPOT";
             #binding-cells = <2>;
@@ -95,7 +96,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&spotify>, <&louder>;
-        };
+        };*/
 
         new_word: new_word { 
             compatible = "zmk,behavior-hold-tap";
@@ -172,20 +173,25 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp O &kp L &kp I &kp V &kp E &kp R &kp DOT &kp K &kp E &kp N &kp N &kp E &kp L &kp RA(Q) &kp M &kp O &kp D &kp E &kp S &kp C &kp H &kp U &kp L &kp E &kp MINUS &kp B &kp E &kp R &kp L &kp I &kp N &kp DOT &kp D &kp E>
+                = <&macro_tap &kp O &kp L &kp I &kp V &kp E &kp R &kp DOT &kp K &kp E &kp N &kp N &kp E &kp L>
+                , <&macro_press &kp RALT>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp RALT>
+                , <&macro_tap &kp M &kp O &kp D &kp E &kp S &kp C &kp H &kp U &kp L &kp E &kp DE_MINUS &kp B &kp E &kp R &kp L &kp I &kp N &kp DOT &kp D &kp E>
                 ;
         };
 
-        keepass: keepass { 
+        kennel: kennel {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <500>;
             bindings
-                = <&kp LGUI>
-                , <&kp K &kp E &kp E &kp P &kp A &kp S &kp S>
-                , <&kp ENTER>
+                = <&macro_tap &kp K &kp E &kp N &kp N &kp E &kp L>
+                , <&macro_press &kp RALT>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp RALT>
+                , <&macro_tap &kp P &kp O &kp S &kp T &kp E &kp O &kp DOT &kp D &kp E>
                 ;
-        };
+        }; 
 
         louder: louder {
             compatible = "zmk,behavior-macro";
@@ -198,11 +204,40 @@ ZMK_BEHAVIOR(bswapper, tri_state,
         spotify: spotify {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <5>;
-            tap-ms = <500>;
+            wait-ms = <400>;
+            tap-ms = <1>;
             bindings
                 = <&kp LGUI>
+                , <&macro_wait_time 5>
                 , <&kp S &kp P &kp O &kp T &kp I &kp F>
+                , <&macro_wait_time 400>
+                , <&kp ENTER>
+                ;
+        };
+
+        word: word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <400>;
+            tap-ms = <1>;
+            bindings
+                =  <&kp LGUI>
+                , <&macro_wait_time 5>
+                , <&kp W &kp I &kp N &kp W &kp O &kp R &kp D>
+                , <&macro_wait_time 400>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+
+        keepass: keepass { 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <400>;
+            bindings
+                = <&kp LGUI>
+                , <&macro_wait_time 5>
+                , <&kp K &kp E &kp E &kp P &kp A &kp S &kp S>
+                , <&macro_wait_time 400>
                 , <&kp ENTER>
                 ;
         };
@@ -212,20 +247,6 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LC(N)>
-                ;
-        };
-
-        word: word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <500>;
-            tap-ms = <5>;
-            bindings
-                =  <&kp LGUI>
-                , <&macro_wait_time 20>
-                , <&kp W &kp I &kp N &kp W &kp O &kp R &kp D>
-                , <&macro_wait_time 500>
-                , <&macro_tap &kp ENTER>
                 ;
         };
   
@@ -281,19 +302,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 ;
         }; 
 
-        kennel: kennel {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp K &kp E &kp N &kp N &kp E &kp L>
-                , <&macro_press &kp RALT>
-                , <&macro_tap &kp Q>
-                , <&macro_release &kp RALT>
-                , <&macro_tap &kp P &kp O &kp S &kp T &kp E &kp O &kp DOT &kp D &kp E>
-                ;
-        }; 
-
-        ltabber: ltabber {
+  /*      ltabber: ltabber {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -315,7 +324,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 , <&macro_wait_time 1000>
                 , <&macro_release &kp RALT>
                 ;
-        }; 
+        }; */
 
         sachsen: sachsen {
             compatible = "zmk,behavior-macro";
@@ -344,7 +353,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             label = "DEF";
             bindings = <
 &kp J &ht W D &kp U &kp A &kp X &word &ht PAUSE_BREAK LS(PAUSE_BREAK)  &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
-&lt STRG C &lt NAV T &lt NUM I &ht LGUI E &kp O &kennel_mode 0 0 &ht LG(E) LG(R) &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G
+&lt STRG C &lt NAV T &lt NUM I &lt ALTTAB E &kp O &kennel_mode 0 0 &ht LG(E) LG(R) &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G //auf r einen Layer der für den swapper ist
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA &spotify &keepass &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
 &ltabber ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE &kp ENTER ___ ___ &rtabber
             >;
@@ -416,6 +425,16 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
 ___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	&louder_spotify 0 0	&ht LA(F4) DEL
 ___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&new_word 0 0	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
 ___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	&mode_keepass 0 0
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+            >;
+        };
+
+        alttab_layer {
+            label = "ALTTAB";
+            bindings = <
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+___ ___ ___ ___ ___ ___ ___ ___ &bswapper ___ &swapper ___
+___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
