@@ -163,7 +163,7 @@ ZMK_BEHAVIOR(hu_cap_udia, macro,
                 , <&macro_release &kp RALT>
                 ;)
 
-/*/////////////// TEXT ////////////////////////
+/////////////// TEXT ////////////////////////
 ZMK_BEHAVIOR(mode, macro,
     wait-ms = <100>;
     tap-ms = <5>;
@@ -190,7 +190,7 @@ ZMK_BEHAVIOR(sachsen, macro,
     bindings = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp N6>
                 ;)
 
-/////////////// APPS ÖFFNEN //////////////////////// 
+/*/////////////// APPS ÖFFNEN //////////////////////// 
 ZMK_BEHAVIOR(spotify, macro,
     wait-ms = <100>;
     tap-ms = <5>;
