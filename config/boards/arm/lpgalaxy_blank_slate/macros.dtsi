@@ -28,7 +28,7 @@
             bindings
                 = <&macro_tap &kp LC(N)>
                 ;
-        };*/
+        };
 
 /////////////// SYMBOLE //////////////////////// 
         plus: plus {
@@ -48,6 +48,8 @@
                 , <&macro_tap &kp LS(C)>
                 ;
         }; 
+
+
 
 /////////////// UNGARISCH //////////////////////// 
         acc: acc {
@@ -112,6 +114,8 @@
                 ;
         }; 
 
+
+
 /////////////// TEXT //////////////////////// 
         mode: mode { 
             compatible = "zmk,behavior-macro";
@@ -144,6 +148,8 @@
                 = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp N6>
                 ;
         }; 
+*/
+
 /////////////// APPS ÖFFNEN //////////////////////// 
         spotify: spotify {
             compatible = "zmk,behavior-macro";
@@ -188,3 +194,33 @@
 
 
     }; 
+
+    ZMK_BEHAVIOR(spotify, macro,
+    wait-ms = <100>;
+    tap-ms = <5>;
+    bindings = <&kp LGUI>
+                , <&macro_wait_time 5>
+                , <&kp S &kp P &kp O &kp T &kp I &kp F>
+                , <&macro_wait_time 400>
+                , <&kp ENTER>
+                ;)
+
+    ZMK_BEHAVIOR(word, macro,
+    wait-ms = <100>;
+    tap-ms = <5>;
+    bindings =  <&kp LGUI>
+                , <&macro_wait_time 5>
+                , <&kp W &kp I &kp N &kp W &kp O &kp R &kp D>
+                , <&macro_wait_time 400>
+                , <&macro_tap &kp ENTER>
+                ;)
+
+    ZMK_BEHAVIOR(keepass, macro,
+    wait-ms = <100>;
+    tap-ms = <5>;
+    bindings = <&kp LGUI>
+                , <&macro_wait_time 5>
+                , <&kp K &kp E &kp E &kp P &kp A &kp S &kp S>
+                , <&macro_wait_time 400>
+                , <&kp ENTER>
+                ;)
