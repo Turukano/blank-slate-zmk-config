@@ -258,7 +258,7 @@ ZMK_BEHAVIOR(new_word, hold_tap,
         }; 
                      
 #include "combos.dtsi"
-};
+
 
     keymap {
         compatible = "zmk,keymap";
