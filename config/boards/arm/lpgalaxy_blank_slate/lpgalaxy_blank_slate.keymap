@@ -342,9 +342,8 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 ;*/
         }; 
                      
-
 #include "combos.dtsi"
-}; 
+ 
 
     keymap {
         compatible = "zmk,keymap";
