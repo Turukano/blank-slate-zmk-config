@@ -148,7 +148,7 @@
                 = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp N6>
                 ;
         }; 
-*/
+
 
 /////////////// APPS ÖFFNEN //////////////////////// 
         spotify: spotify {
@@ -223,4 +223,4 @@
                 , <&kp K &kp E &kp E &kp P &kp A &kp S &kp S>
                 , <&macro_wait_time 400>
                 , <&kp ENTER>
-                ;)
+                ;)*/

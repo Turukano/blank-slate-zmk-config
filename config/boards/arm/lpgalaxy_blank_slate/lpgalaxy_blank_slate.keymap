@@ -22,16 +22,15 @@
 #define KEYS_R RT1 RT2 RT3 RT4 RT5 RM1 RM2 RM3 RM4 RM5 RB1 RB2 RB3 RB4 RB5
 #define THUMBS LH2 LH1 LH0 RH0 RH1    
 
+#define BT(n) BT_SEL n
+
 &lt {
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             quick_tap_ms = <200>;
             flavor = "tap-preferred";
     };
 
-#define BT(n) BT_SEL n
-
 /////////////// ALTTAB //////////////////////// 
-
 ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;)
 
@@ -41,8 +40,6 @@ ZMK_BEHAVIOR(bswapper, tri_state,
 ZMK_COMBO(swit,  &kp RA(TAB), 20 21 22, ALL, 25)
 
 /////////////// HOLDTABS //////////////////////// 
-
-
 ZMK_BEHAVIOR(ht, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <250>;
@@ -68,7 +65,6 @@ ZMK_BEHAVIOR(new_word, hold_tap,
     bindings = <&word>, <&new>;)
 
 /////////////// COMBOS //////////////////////// 
-
 ZMK_COMBO(win,  &kp LGUI, 14 15, ALL, 25)
 ZMK_COMBO(esc,  &kp ESC, 13 14, ALL, 25)
 ZMK_COMBO(btab,  &kp LS(TAB), 8 9, ALL, 25)
@@ -100,7 +96,6 @@ ZMK_BEHAVIOR(new, macro,
                 ;)
 
 /////////////// SYMBOLE //////////////////////// 
-
 ZMK_BEHAVIOR(plus, macro,
     wait-ms = <100>;
     tap-ms = <5>;
