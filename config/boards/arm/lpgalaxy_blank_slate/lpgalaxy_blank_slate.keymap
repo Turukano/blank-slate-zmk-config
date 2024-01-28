@@ -84,7 +84,7 @@ ZMK_BEHAVIOR(new_word, hold_tap,
         def_layer {
             label = "DEF";
             bindings = <
-&kp J &ht W D &kp U &kp A &kp X &word &ht PAUSE_BREAK LS(PAUSE_BREAK)  &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
+&kp J &ht W D &kp U &kp A &kp X &new_word 0 0 &ht PAUSE_BREAK LS(PAUSE_BREAK)  &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
 &lt STRG C &lt NAV T &lt NUM I &lt ALTTAB E &kp O &kennel_mode 0 0 &ht LG(E) LG(R) &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G //auf r einen Layer der für den swapper ist
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA &spotify &keepass &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
 ___ ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE &kp ENTER ___ ___ ___
