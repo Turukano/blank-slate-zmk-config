@@ -177,7 +177,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 , <&macro_press &kp RALT>
                 , <&macro_tap &kp Q>
                 , <&macro_release &kp RALT>
-                , <&macro_tap &kp M &kp O &kp D &kp E &kp S &kp C &kp H &kp U &kp L &kp E &kp DE_MINUS &kp B &kp E &kp R &kp L &kp I &kp N &kp DOT &kp D &kp E>
+                , <&macro_tap &kp M &kp O &kp D &kp E &kp S &kp C &kp H &kp U &kp L &kp E &kp DE_MINS &kp B &kp E &kp R &kp L &kp I &kp N &kp DOT &kp D &kp E>
                 ;
         };
 
