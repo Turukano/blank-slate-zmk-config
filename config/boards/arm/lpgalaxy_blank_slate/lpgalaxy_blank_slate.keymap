@@ -47,39 +47,30 @@ ZMK_BEHAVIOR(ht, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
-ZMK_BEHAVIOR(ht, plus_grad,
+ZMK_BEHAVIOR(plus_grad, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <250>;
     quick-tap-ms = <125>;
     bindings = <&grad>, <&plus>;
 )
 
+ZMK_BEHAVIOR(kennel_mode, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <125>;
+    bindings = <&mode>, <&kennel>;
+)
+
+ZMK_BEHAVIOR(new_word, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <125>;
+    bindings = <&word>, <&new>;
+)
+
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
-    };
-
-    behaviors {
-
-        kennel_mode: kennel_mode { 
-            compatible = "zmk,behavior-hold-tap";
-            label = "MODEKENNEL";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&mode>, <&kennel>;
-        };
-
-        new_word: new_word { 
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEWWORD";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&word>, <&new>;
-        };
     };
 
     macros {
