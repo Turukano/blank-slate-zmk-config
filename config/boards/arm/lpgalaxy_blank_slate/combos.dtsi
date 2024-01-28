@@ -30,3 +30,9 @@ combos {
             bindings = <&kp RA(TAB)>;
         };
     };
+
+    /*ZMK_COMBO(win,  &kp LGUI, 14 15, ALL, 25)
+    ZMK_COMBO(esc,  &kp ESC, 13 14, ALL, 25)
+    ZMK_COMBO(btab,  &kp LS(TAB), 8 9, ALL, 25)
+    ZMK_COMBO(tab,  &kp TAB, 9 10, ALL, 25)
+    ZMK_COMBO(switch,  &kp RA(TAB), 20 21 22, ALL, 25)*/
