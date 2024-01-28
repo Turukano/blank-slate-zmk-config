@@ -341,10 +341,10 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 = <&macro_tap &kp LS(S)>
                 ;*/
         }; 
-    };                  
+                     
 
 #include "combos.dtsi"
-
+}; 
 
     keymap {
         compatible = "zmk,keymap";
