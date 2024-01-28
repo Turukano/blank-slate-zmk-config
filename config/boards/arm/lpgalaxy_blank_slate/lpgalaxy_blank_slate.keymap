@@ -110,7 +110,7 @@ ZMK_BEHAVIOR(grad, macro,
                 , <&macro_tap &kp LS(C)>
                 ;)
 
-/*/////////////// UNGARISCH ////////////////////////
+/////////////// UNGARISCH ////////////////////////
 ZMK_BEHAVIOR(acc, macro,
     wait-ms = <100>;
     tap-ms = <5>;
@@ -163,7 +163,7 @@ ZMK_BEHAVIOR(hu_cap_udia, macro,
                 , <&macro_release &kp RALT>
                 ;)
 
-/////////////// TEXT ////////////////////////
+/*/////////////// TEXT ////////////////////////
 ZMK_BEHAVIOR(mode, macro,
     wait-ms = <100>;
     tap-ms = <5>;
