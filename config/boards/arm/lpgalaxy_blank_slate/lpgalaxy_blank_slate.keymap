@@ -73,48 +73,7 @@ ZMK_BEHAVIOR(new_word, hold_tap,
        zmk,matrix_transform = &ortho_transform;
     };
 
-    behaviors {
-        ht: holdtap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLDTAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>; //überprüfen
-            quick-tap-ms = <0>; //überprüfen
-            flavor = "tap-preferred"; //überprüfen
-            bindings = <&kp>, <&kp>;
-        };
-
-        plus_grad: plus_grad { 
-            compatible = "zmk,behavior-hold-tap";
-            label = "PLUSGRAD";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&grad>, <&plus>;
-        };
-
-        kennel_mode: kennel_mode { 
-            compatible = "zmk,behavior-hold-tap";
-            label = "MODEKENNEL";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&mode>, <&kennel>;
-        };
-
-        new_word: new_word { 
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEWWORD";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&word>, <&new>;
-        };
-    };
-
+#include "behaviors.dtsi"
 #include "macros.dtsi"                     
 #include "combos.dtsi"
 
@@ -125,7 +84,7 @@ ZMK_BEHAVIOR(new_word, hold_tap,
         def_layer {
             label = "DEF";
             bindings = <
-&kp J &ht W D &kp U &kp A &kp X &new_word &ht PAUSE_BREAK LS(PAUSE_BREAK)  &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
+&kp J &ht W D &kp U &kp A &kp X &word &ht PAUSE_BREAK LS(PAUSE_BREAK)  &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
 &lt STRG C &lt NAV T &lt NUM I &lt ALTTAB E &kp O &kennel_mode 0 0 &ht LG(E) LG(R) &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G //auf r einen Layer der für den swapper ist
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA &spotify &keepass &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
 ___ ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE &kp ENTER ___ ___ ___
