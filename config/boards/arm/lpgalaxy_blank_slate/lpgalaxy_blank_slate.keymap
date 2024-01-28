@@ -167,7 +167,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 , <&macro_tap &kp SPACE>
                 , <&macro_tap &kp LS(C)>
                 ;
-        };
+        }; 
 
         mode: mode { 
             compatible = "zmk,behavior-macro";
