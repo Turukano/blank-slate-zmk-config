@@ -70,7 +70,7 @@ ZMK_COMBO(esc,  &kp ESC, 13 14, ALL, 25)
 ZMK_COMBO(btab,  &kp LS(TAB), 8 9, ALL, 25)
 ZMK_COMBO(tab,  &kp TAB, 9 10, ALL, 25)
 
-/////////////// STEUERUNG ////////////////////////   
+/*/////////////// STEUERUNG ////////////////////////   
 ZMK_BEHAVIOR(selectline, macro,
     wait-ms = <100>;
     tap-ms = <5>;
@@ -219,12 +219,14 @@ ZMK_BEHAVIOR(keepass, macro,
                 , <&kp K &kp E &kp E &kp P &kp A &kp S &kp S>
                 , <&macro_wait_time 600>
                 , <&kp ENTER>
-                ;)
+                ;)*/
 
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
     };
+
+#include "macros.dtsi"
 
     keymap {
         compatible = "zmk,keymap";
@@ -318,7 +320,6 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
-
 
     };
 };
