@@ -40,7 +40,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
     bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>;
 )
 
-/*ZMK_BEHAVIOR(ht, hold_tap,
+ZMK_BEHAVIOR(ht, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <250>;
     quick-tap-ms = <125>;
@@ -66,14 +66,14 @@ ZMK_BEHAVIOR(new_word, hold_tap,
     tapping-term-ms = <250>;
     quick-tap-ms = <125>;
     bindings = <&word>, <&new>;
-)*/
+)
 
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
     };
 
-#include "behaviors.dtsi"
+//#include "behaviors.dtsi"
 #include "macros.dtsi"                     
 #include "combos.dtsi"
 
