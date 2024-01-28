@@ -1,5 +1,5 @@
     macros {
-/////////////// STEUERUNG ////////////////////////        
+/*/////////////// STEUERUNG ////////////////////////        
         selectline: selectline {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -49,7 +49,7 @@
                 ;
         }; 
 
-
+*/
 
 /////////////// UNGARISCH //////////////////////// 
         acc: acc {

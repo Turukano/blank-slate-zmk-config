@@ -70,7 +70,7 @@ ZMK_COMBO(esc,  &kp ESC, 13 14, ALL, 25)
 ZMK_COMBO(btab,  &kp LS(TAB), 8 9, ALL, 25)
 ZMK_COMBO(tab,  &kp TAB, 9 10, ALL, 25)
 
-/*/////////////// STEUERUNG ////////////////////////   
+/////////////// STEUERUNG ////////////////////////   
 ZMK_BEHAVIOR(selectline, macro,
     wait-ms = <100>;
     tap-ms = <5>;
@@ -110,7 +110,7 @@ ZMK_BEHAVIOR(grad, macro,
                 , <&macro_tap &kp LS(C)>
                 ;)
 
-/////////////// UNGARISCH ////////////////////////
+/*/////////////// UNGARISCH ////////////////////////
 ZMK_BEHAVIOR(acc, macro,
     wait-ms = <100>;
     tap-ms = <5>;
