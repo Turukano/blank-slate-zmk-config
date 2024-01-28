@@ -334,13 +334,13 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 ;
         }; 
 
- /*       cap_s: cap_s {
+        cap_s: cap_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LS(S)>
                 ;
-        }; */
+        }; 
     };                  
 
 #include "combos.dtsi"
