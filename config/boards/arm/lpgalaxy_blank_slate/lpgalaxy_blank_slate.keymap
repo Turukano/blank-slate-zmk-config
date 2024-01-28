@@ -26,8 +26,6 @@
 
 #define BT(n) BT_SEL n
 
-//todo: HRMs so modifizieren, dass nicht gerollt werden kann. Außerdem tapping term, quick tap und flafr ausprobieren. Außerdem alle Tasten mal probieren. Lösung für Enter auf linken Daumen.
-
     &lt {
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             quick_tap_ms = <200>;
@@ -52,9 +50,9 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP";
             #binding-cells = <2>;
-            tapping-term-ms = <250>; //überprüfen
-            quick-tap-ms = <0>; //überprüfen
-            flavor = "tap-preferred"; //überprüfen
+            tapping-term-ms = <250>; 
+            quick-tap-ms = <0>; 
+            flavor = "tap-preferred"; 
             bindings = <&kp>, <&kp>;
         };
 
@@ -68,16 +66,6 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             bindings = <&grad>, <&plus>;
         };
 
-     /*   mode_keepass: mode_keepass { 
-            compatible = "zmk,behavior-hold-tap";
-            label = "MODEKEE";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&keepass>, <&mode>;
-        };*/
-
         kennel_mode: kennel_mode { 
             compatible = "zmk,behavior-hold-tap";
             label = "MODEKENNEL";
@@ -88,16 +76,6 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             bindings = <&mode>, <&kennel>;
         };
 
-  /*      louder_spotify: louder_spotify {      
-            compatible = "zmk,behavior-hold-tap";
-            label = "LOUSPOT";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&spotify>, <&louder>;
-        };*/
-
         new_word: new_word { 
             compatible = "zmk,behavior-hold-tap";
             label = "NEWWORD";
@@ -107,15 +85,6 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             flavor = "balanced";
             bindings = <&word>, <&new>;
         };
-
-  /*      s_sachsen: s_sachsen { 
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&sachsen>, <&cap_s>;
-        };*/  
     };
 
     macros {
@@ -192,14 +161,6 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 , <&macro_tap &kp P &kp O &kp S &kp T &kp E &kp O &kp DOT &kp D &kp E>
                 ;
         }; 
-
-  /*      louder: louder {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp C_VOL_UP>
-                ;
-        };*/
 
         spotify: spotify {
             compatible = "zmk,behavior-macro";
@@ -302,30 +263,6 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 ;
         }; 
 
-  /*      ltabber: ltabber {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp TAB>
-                , <&macro_wait_time 1000>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp RALT>
-                ;
-        }; 
-
-        rtabber: rtabber {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp RALT>
-                , <&macro_tap &kp TAB>
-                , <&macro_wait_time 1000>
-                , <&macro_release &kp RALT>
-                ;
-        }; */
-
         sachsen: sachsen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -333,17 +270,9 @@ ZMK_BEHAVIOR(bswapper, tri_state,
                 = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp N6>
                 ;
         }; 
-
-       /* cap_s: cap_s {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp LS(S)>
-                ;*/
-        }; 
                      
 #include "combos.dtsi"
- 
+ }; 
 
     keymap {
         compatible = "zmk,keymap";
@@ -351,7 +280,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
         def_layer {
             label = "DEF";
             bindings = <
-&kp J &ht W D &kp U &kp A &kp X &word &ht PAUSE_BREAK LS(PAUSE_BREAK)  &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
+&kp J &ht W D &kp U &kp A &kp X &new_word &ht PAUSE_BREAK LS(PAUSE_BREAK)  &ht DE_LBKT P &ht DE_LPAR H &ht DE_FSLH L &ht DE_RPAR M &ht DE_RBKT W
 &lt STRG C &lt NAV T &lt NUM I &lt ALTTAB E &kp O &kennel_mode 0 0 &ht LG(E) LG(R) &ht DE_QUES B &kp N &ht DE_ACUT R &ht DE_SS S &ht ENTER G //auf r einen Layer der für den swapper ist
 &kp F &kp V &kp DE_UDIA &kp DE_ADIA &kp DE_ODIA &spotify &keepass &kp DE_Y &ht DE_AT DE_Z &sl SHIF &kp DE_COMM &ht Q K
 ___ ___ ___ &kp ENTER &sl SHIF &ht DE_EXCL DE_DOT &kp BSPC &lt NAV SPACE &kp ENTER ___ ___ ___
