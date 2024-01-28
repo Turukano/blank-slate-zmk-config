@@ -111,7 +111,7 @@ ZMK_BEHAVIOR(grad, macro,
                 ;)
 
 /////////////// UNGARISCH ////////////////////////
-ZMK_BEHAVIOR(acc, macro-one-param,
+ZMK_BEHAVIOR(acc, macro-one-param, //!!!!
     wait-ms = <100>;
     tap-ms = <5>;
     bindings = <&macro_tap &kp DE_ACUT>
@@ -130,7 +130,7 @@ ZMK_BEHAVIOR(hu_odia, macro,
                 , <&macro_release &kp RALT>
                 ;)
 
-/*ZMK_BEHAVIOR(hu_cap_odia, macro,
+ZMK_BEHAVIOR(hu_cap_odia, macro,
     wait-ms = <100>;
     tap-ms = <5>;
     bindings = <&macro_press &kp RALT>
@@ -219,14 +219,14 @@ ZMK_BEHAVIOR(keepass, macro,
                 , <&kp K &kp E &kp E &kp P &kp A &kp S &kp S>
                 , <&macro_wait_time 600>
                 , <&kp ENTER>
-                ;)*/
+                ;)
 
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
     };
 
-#include "macros.dtsi"
+//#include "macros.dtsi"
 
     keymap {
         compatible = "zmk,keymap";
