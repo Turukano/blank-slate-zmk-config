@@ -256,6 +256,7 @@ ZMK_BEHAVIOR(new_word, hold_tap,
                 = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp N6>
                 ;
         }; 
+    }; 
                      
 #include "combos.dtsi"
 
