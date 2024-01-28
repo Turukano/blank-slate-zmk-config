@@ -111,7 +111,7 @@ ZMK_BEHAVIOR(grad, macro,
                 ;)
 
 /////////////// UNGARISCH ////////////////////////
-ZMK_BEHAVIOR(acc, macro,
+ZMK_BEHAVIOR(acc, macro-one-param,
     wait-ms = <100>;
     tap-ms = <5>;
     bindings = <&macro_tap &kp DE_ACUT>
