@@ -115,7 +115,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&sachsen>, <&cap_s>;
-        };*/
+        };*/  
     };
 
     macros {
