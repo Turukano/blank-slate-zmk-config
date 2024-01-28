@@ -194,7 +194,7 @@ ZMK_BEHAVIOR(spotify, macro,
     bindings = <&kp LGUI>
                 , <&macro_wait_time 5>
                 , <&kp S &kp P &kp O &kp T &kp I &kp F>
-                , <&macro_wait_time 400>
+                , <&macro_wait_time 600>
                 , <&kp ENTER>
                 ;)
 
@@ -204,7 +204,7 @@ ZMK_BEHAVIOR(word, macro,
     bindings =  <&kp LGUI>
                 , <&macro_wait_time 5>
                 , <&kp W &kp I &kp N &kp W &kp O &kp R &kp D>
-                , <&macro_wait_time 400>
+                , <&macro_wait_time 600>
                 , <&macro_tap &kp ENTER>
                 ;)
 
@@ -214,7 +214,7 @@ ZMK_BEHAVIOR(keepass, macro,
     bindings = <&kp LGUI>
                 , <&macro_wait_time 5>
                 , <&kp K &kp E &kp E &kp P &kp A &kp S &kp S>
-                , <&macro_wait_time 400>
+                , <&macro_wait_time 600>
                 , <&kp ENTER>
                 ;)
 
