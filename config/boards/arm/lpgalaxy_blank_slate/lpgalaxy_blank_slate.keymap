@@ -225,7 +225,6 @@ ZMK_BEHAVIOR(keepass, macro,
                 , <&kp ENTER>
                 ;)
 
-
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
