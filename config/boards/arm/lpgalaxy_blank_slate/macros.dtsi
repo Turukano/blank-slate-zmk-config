@@ -1,6 +1,6 @@
     macros {
 /////////////// STEUERUNG ////////////////////////        
-        selectline: selectline {
+/*        selectline: selectline {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -28,7 +28,7 @@
             bindings
                 = <&macro_tap &kp LC(N)>
                 ;
-        };
+        };*/
 
 /////////////// SYMBOLE //////////////////////// 
         plus: plus {
