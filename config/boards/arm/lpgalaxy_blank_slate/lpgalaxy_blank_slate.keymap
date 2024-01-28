@@ -119,7 +119,7 @@ ZMK_BEHAVIOR(acc, macro,
                 , <&kp MACRO_PLACEHOLDER>
                 ;)
 
-ZMK_BEHAVIOR(hu_odia, macro,
+/*ZMK_BEHAVIOR(hu_odia, macro,
     wait-ms = <100>;
     tap-ms = <5>;
     bindings = <&macro_press &kp RALT>
@@ -190,7 +190,7 @@ ZMK_BEHAVIOR(sachsen, macro,
     bindings = <&macro_tap &kp LS(S) &kp DE_ADIA &kp C &kp H &kp S &kp I &kp S &kp C &kp E &kp SPACE &kp LS(S) &kp T &kp R &kp DOT &kp SPACE &kp N3 &kp N6>
                 ;)
 
-/*/////////////// APPS ÖFFNEN //////////////////////// 
+/////////////// APPS ÖFFNEN //////////////////////// 
 ZMK_BEHAVIOR(spotify, macro,
     wait-ms = <100>;
     tap-ms = <5>;

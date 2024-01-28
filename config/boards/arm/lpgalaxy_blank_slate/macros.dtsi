@@ -61,7 +61,7 @@
                 , <&kp MACRO_PLACEHOLDER>
             ;
         };
-
+*/
         hu_odia: hu_odia {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -149,7 +149,7 @@
                 ;
         }; 
 
-*/
+
 /////////////// APPS ÖFFNEN //////////////////////// 
         spotify: spotify {
             compatible = "zmk,behavior-macro";
