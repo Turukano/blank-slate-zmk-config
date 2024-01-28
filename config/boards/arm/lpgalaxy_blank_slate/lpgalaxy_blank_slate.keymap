@@ -40,21 +40,27 @@ ZMK_BEHAVIOR(bswapper, tri_state,
     bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>;
 )
 
+ZMK_BEHAVIOR(ht, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <125>;
+    bindings = <&kp>, <&kp>;
+)
+
+ZMK_BEHAVIOR(ht, plus_grad,
+    flavor = "tap-preferred";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <125>;
+    bindings = <&grad>, <&plus>;
+)
+
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
     };
 
     behaviors {
-        ht: holdtap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLDTAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>; 
-            quick-tap-ms = <0>; 
-            flavor = "tap-preferred"; 
-            bindings = <&kp>, <&kp>;
-        };
+
 
         plus_grad: plus_grad { 
             compatible = "zmk,behavior-hold-tap";
@@ -272,7 +278,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
         }; 
                      
 #include "combos.dtsi"
-
+};
 
     keymap {
         compatible = "zmk,keymap";
@@ -369,5 +375,5 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
 
 
     };
-};};
+};
 
