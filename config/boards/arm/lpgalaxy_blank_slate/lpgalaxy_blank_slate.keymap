@@ -40,7 +40,7 @@ ZMK_BEHAVIOR(bswapper, tri_state,
     bindings = <&kt LALT>, <&kp LS(TAB)>, <&kt LALT>;
 )
 
-ZMK_BEHAVIOR(ht, hold_tap,
+/*ZMK_BEHAVIOR(ht, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <250>;
     quick-tap-ms = <125>;
@@ -66,11 +66,53 @@ ZMK_BEHAVIOR(new_word, hold_tap,
     tapping-term-ms = <250>;
     quick-tap-ms = <125>;
     bindings = <&word>, <&new>;
-)
+)*/
 
 / {
     chosen {
        zmk,matrix_transform = &ortho_transform;
+    };
+
+    behaviors {
+        ht: holdtap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>; //überprüfen
+            quick-tap-ms = <0>; //überprüfen
+            flavor = "tap-preferred"; //überprüfen
+            bindings = <&kp>, <&kp>;
+        };
+
+        plus_grad: plus_grad { 
+            compatible = "zmk,behavior-hold-tap";
+            label = "PLUSGRAD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&grad>, <&plus>;
+        };
+
+        kennel_mode: kennel_mode { 
+            compatible = "zmk,behavior-hold-tap";
+            label = "MODEKENNEL";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&mode>, <&kennel>;
+        };
+
+        new_word: new_word { 
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEWWORD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&word>, <&new>;
+        };
     };
 
     macros {
