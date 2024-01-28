@@ -119,7 +119,7 @@ ZMK_BEHAVIOR(acc, macro,
                 , <&kp MACRO_PLACEHOLDER>
                 ;)
 
-/*ZMK_BEHAVIOR(hu_odia, macro,
+ZMK_BEHAVIOR(hu_odia, macro,
     wait-ms = <100>;
     tap-ms = <5>;
     bindings = <&macro_press &kp RALT>
@@ -130,7 +130,7 @@ ZMK_BEHAVIOR(acc, macro,
                 , <&macro_release &kp RALT>
                 ;)
 
-ZMK_BEHAVIOR(hu_cap_odia, macro,
+/*ZMK_BEHAVIOR(hu_cap_odia, macro,
     wait-ms = <100>;
     tap-ms = <5>;
     bindings = <&macro_press &kp RALT>

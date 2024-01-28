@@ -61,7 +61,7 @@
                 , <&kp MACRO_PLACEHOLDER>
             ;
         };
-*/
+
         hu_odia: hu_odia {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -74,7 +74,7 @@
                 , <&macro_release &kp RALT>
                 ;
         };
-
+*/
         hu_cap_odia: hu_cap_odia {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
