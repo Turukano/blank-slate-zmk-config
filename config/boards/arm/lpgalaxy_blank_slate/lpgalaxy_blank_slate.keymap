@@ -111,7 +111,7 @@ ZMK_BEHAVIOR(grad, macro,
                 ;)
 
 /////////////// UNGARISCH ////////////////////////
-ZMK_BEHAVIOR(acc, macro_one_param,
+ZMK_BEHAVIOR(acc, macro_one_param, //(!)
     wait-ms = <100>;
     tap-ms = <5>;
     bindings = <&macro_tap &kp DE_ACUT>
@@ -295,7 +295,7 @@ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             label = "NUMSHIF";
             bindings = <
 ___ ___ ___ ___ ___ ___ ___ &ht DE_LABK PAUSE_BREAK &ht DE_LBRC  PAUSE_BREAK &ht DE_BSLH  PAUSE_BREAK &ht DE_RBRC  PAUSE_BREAK &ht DE_RABK PAUSE_BREAK
-___ ___ ___ ___ ___ ___ ___ &bswapper	&kp DE_DLR	&swapper	&kp DE_TILD	&ht LC(ENTER) LS(ENTER)
+___ ___ ___ ___ ___ ___ ___ &bswapper	&kp DE_DLR	___	&kp DE_TILD	&ht LC(ENTER) LS(ENTER)
 ___ ___ ___ ___ ___ ___ ___ &kp DE_AMPS ___	&ht DE_UNDS DE_MINS	&kp DE_SEMI ___
 ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___ 
             >;
@@ -305,7 +305,7 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
             label = "STRGSHIF";
             bindings = <
 ___ ___ &acc LS(U) &acc LS(A) ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	&kp C_VOL_UP	&ht LA(F4) DEL
-___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	&new_word 0 0	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
+___ ___ &acc LS(I) &acc LS(E) &acc LS(O) ___ ___ &ht FN_REPL FN_SEARCH	___	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
 ___ ___ &hu_cap_udia ___ &hu_cap_odia ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	___
 ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
