@@ -69,6 +69,8 @@ ZMK_COMBO(win,  &kp LGUI, 14 15, ALL, 25)
 ZMK_COMBO(esc,  &kp ESC, 13 14, ALL, 25)
 ZMK_COMBO(btab,  &kp LS(TAB), 8 9, ALL, 25)
 ZMK_COMBO(tab,  &kp TAB, 9 10, ALL, 25)
+ZMK_COMBO(profile1, &bt BT_SEL 1, 5 6, ALL, 25)
+ZMK_COMBO(profile2, &bt BT_SEL 2, 17 18, ALL, 25)
 
 /////////////// STEUERUNG ////////////////////////   
 ZMK_BEHAVIOR(selectline, macro,
