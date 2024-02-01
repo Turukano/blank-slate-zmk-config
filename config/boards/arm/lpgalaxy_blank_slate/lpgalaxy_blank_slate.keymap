@@ -77,7 +77,7 @@ ZMK_COMBO(banana, &sl STRGSHIF, LT5 LH1, ALL, 125)
 
 /////////////// TAPDANCE //////////////////////// 
 ZMK_BEHAVIOR(coppp, tap_dance,
-    tapping-term-ms = <200>;
+    tapping-term-ms = <300>;
     bindings = <&kp LC(C)>, <&kp LG(LS(S))>, <&kp LG(LS(T))>;)
 
 /////////////// STEUERUNG ////////////////////////   
@@ -314,12 +314,12 @@ ___ ___ ___ ___ ___ ___ &kp LC(BSPC) &kp SPACE ___ ___ ___ ___
         strgshif_layer {
             label = "STRGSHIF";
             bindings = <
-___ ___ ___ ___ ___ ___ ___ &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	&kp C_VOL_UP	&ht LA(F4) DEL
+___ ___ ___ ___ ___ ___ ___                         &ht FN_PROJECT FN_PRINT	&ht C_MUTE C_VOL_DN	&ht LG(L) C_AC_ZOOM_IN	&kp C_VOL_UP	&ht LA(F4) DEL
 ___ &coppp &ht LC(T) RA(TAB) &kp LC(V) &ht F12 LC(S)  ___ ___ &ht FN_REPL FN_SEARCH	___	&ht LG(R) C_AC_ZOOM_OUT	 &ht F12 LC(S)	&kp LA(N)
-___ ___ ___ ___ ___ ___ ___ ___	&ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	___
-___ ___ ___ ___ &kp LSHFT &kp LCTRL ___ ___ ___ ___ ___ ___
+___ ___ ___ ___ ___ ___ ___                      	___ &ht LG(E) PAUSE_BREAK	___	&ht C_BRI_UP PAUSE_BREAK	___
+___ ___ ___                 ___ &kp LSHFT &kp LCTRL ___ ___ ___ ___ ___ ___
             >;
-        }; //alttab, save,
+        }; 
 
         alttab_layer {
             label = "ALTTAB";
